@@ -1,42 +1,27 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@import url("https://fonts.googleapis.com/css2?family=Questrial");
+
+.mil-testimonials-1.swiper,
+.mil-testimonials-2.swiper {
+  overflow: visible;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.mil-accordion-group .mil-accordion-content {
+  transition: height 1s ease;
 }
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+.mil-accordion-group.mil-active .mil-accordion-content {
+  height: auto !important;
 }
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.mil-accordion-icon i {
+  transform: rotate(90deg);
+  transition: 0.3s all;
 }
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+.mil-accordion-group .mil-accordion-icon {
+  transition: 0.3s all;
 }
-
-a {
-  color: inherit;
-  text-decoration: none;
+.mil-accordion-group.mil-active .mil-accordion-icon {
+  background-color: rgb(242, 116, 87) !important;
 }
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.mil-accordion-group.mil-active .mil-accordion-icon i {
+  transform: rotate(180deg);
+  color: white;
 }
