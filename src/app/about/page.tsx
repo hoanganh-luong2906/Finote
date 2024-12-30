@@ -1,10 +1,11 @@
 
 import LocalesLayout from "@/app/layout";
 import { CallToAction2 } from "@/commons/components/CallToAction";
+import PageLayout from "@/commons/PageLayout";
 import Link from "next/link";
 const page = () => {
   return (
-    <LocalesLayout>
+    <PageLayout>
       <div className="mil-banner mil-banner-inner mil-dissolve">
         <div className="container">
           <div className="row align-items-center justify-content-center">
@@ -325,7 +326,7 @@ const page = () => {
       {/* call to action */}
       <CallToAction2 />
       {/* call to action end */}
-    </LocalesLayout>
+    </PageLayout>
   );
 };
 export default page;

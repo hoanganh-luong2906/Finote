@@ -1,0 +1,266 @@
+/**
+ * @license
+ *
+ * Font Family: Switzer
+ * Designed by: Jérémie Hornus
+ * URL: https://www.fontshare.com/fonts/switzer
+ * © 2024 Indian Type Foundry
+ *
+ * Font Styles:
+ * Switzer Variable(Variable font)
+ * Switzer Variable Italic(Variable font)
+ * Switzer Thin
+ * Switzer Thin Italic
+ * Switzer Extralight
+ * Switzer Extralight Italic
+ * Switzer Light
+ * Switzer Light Italic
+ * Switzer Regular
+ * Switzer Italic
+ * Switzer Medium
+ * Switzer Medium Italic
+ * Switzer Semibold
+ * Switzer Semibold Italic
+ * Switzer Bold
+ * Switzer Bold Italic
+ * Switzer Extrabold         
+ * Switzer Extrabold Italic
+ * Switzer Black
+ * Switzer Black Italic
+ *
+*/
+
+/**
+* This is a variable font
+* You can controll variable axes as shown below:
+* font-variation-settings: 'wght' 400.0;
+*
+* available axes:
+
+* 'wght' (range from 100.0 to 900.0)
+
+*/
+
+@font-face {
+  font-family: Inter-Variable;
+  src: url('../fonts/Inter-Variable_opsz,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: 'wght' 400.0;
+*
+* available axes:
+
+* 'wght' (range from 100.0 to 900.0)
+
+*/
+
+@font-face {
+  font-family: 'Inter-VariableItalic';
+  src: url('../fonts/Inter-Italic-Variable_opsz,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Inter-Thin';
+  src:
+    url('../fonts/Inter_18pt-Thin.ttf') format('truetype'),
+    url('../fonts/Inter_24pt-Thin.ttf') format('truetype'),
+    url('../fonts/Inter_28pt-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter-ThinItalic';
+  src:
+    url('../fonts/Inter_18pt-ThinItalic.ttf') format('truetype'),
+    url('../fonts/Inter_24pt-ThinItalic.ttf') format('truetype'),
+    url('../fonts/Inter_28pt-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Inter-Extralight';
+  src:
+    url('../fonts/Inter_18pt-ExtraLight.ttf') format('truetype'),
+    url('../fonts/Inter_24pt-ExtraLight.ttf') format('truetype'),
+    url('../fonts/Inter_28pt-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter-ExtralightItalic';
+  src:
+    url('../fonts/Inter_18pt-ExtraLightItalic.ttf') format('truetype'),
+    url('../fonts/Inter_24pt-ExtraLightItalic.ttf') format('truetype'),
+    url('../fonts/Inter_28pt-ExtraLightItalic.ttf') format('truetype');
+  font-weight: 200;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Inter-Light';
+  src:
+    url('../fonts/Inter_18pt-Light.ttf') format('truetype'),
+    url('../fonts/Inter_24pt-Light.ttf') format('truetype'),
+    url('../fonts/Inter_28pt-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter-LightItalic';
+  src:
+    url('../fonts/Inter_18pt-LightItalic.ttf') format('truetype'),
+    url('../fonts/Inter_24pt-LightItalic.ttf') format('truetype'),
+    url('../fonts/Inter_28pt-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Inter-Regular';
+  src:
+    url('../fonts/Inter_18pt-Regular.ttf') format('truetype'),
+    url('../fonts/Inter_24pt-Regular.ttf') format('truetype'),
+    url('../fonts/Inter_28pt-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter-Italic';
+  src:
+    url('../fonts/Inter_18pt-Italic.ttf') format('truetype'),
+    url('../fonts/Inter_24pt-Italic.ttf') format('truetype'),
+    url('../fonts/Inter_28pt-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Inter-Medium';
+  src:
+    url('../fonts/Inter_18pt-Medium.ttf') format('truetype'),
+    url('../fonts/Inter_24pt-Medium.ttf') format('truetype'),
+    url('../fonts/Inter_28pt-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter-MediumItalic';
+  src:
+    url('../fonts/Inter_18pt-MediumItalic.ttf') format('truetype'),
+    url('../fonts/Inter_24pt-MediumItalic.ttf') format('truetype'),
+    url('../fonts/Inter_28pt-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Inter-Semibold';
+  src:
+    url('../fonts/Inter_18pt-SemiBold.ttf') format('truetype'),
+    url('../fonts/Inter_24pt-SemiBold.ttf') format('truetype'),
+    url('../fonts/Inter_28pt-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter-SemiboldItalic';
+  src:
+    url('../fonts/Inter_18pt-SemiBoldItalic.ttf') format('truetype'),
+    url('../fonts/Inter_24pt-SemiBoldItalic.ttf') format('truetype'),
+    url('../fonts/Inter_28pt-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Inter-Bold';
+  src:
+    url('../fonts/Inter_18pt-Bold.ttf') format('truetype'),
+    url('../fonts/Inter_24pt-Bold.ttf') format('truetype'),
+    url('../fonts/Inter_28pt-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter-BoldItalic';
+  src:
+    url('../fonts/Inter_18pt-BoldItalic.ttf') format('truetype'),
+    url('../fonts/Inter_24pt-BoldItalic.ttf') format('truetype'),
+    url('../fonts/Inter_28pt-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Inter-Extrabold';
+  src:
+    url('../fonts/Inter_18pt-ExtraBold.ttf') format('truetype'),
+    url('../fonts/Inter_24pt-ExtraBold.ttf') format('truetype'),
+    url('../fonts/Inter_28pt-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter-ExtraboldItalic';
+  src:
+    url('../fonts/Inter_18pt-ExtraBoldItalic.ttf') format('truetype'),
+    url('../fonts/Inter_24pt-ExtraBoldItalic.ttf') format('truetype'),
+    url('../fonts/Inter_28pt-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: 800;
+  font-display: swap;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Inter-Black';
+  src:
+    url('../fonts/Inter_18pt-Black.ttf') format('truetype'),
+    url('../fonts/Inter_24pt-Black.ttf') format('truetype'),
+    url('../fonts/Inter_28pt-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter-BlackItalic';
+  src:
+    url('../fonts/Inter_18pt-BlackItalic.ttf') format('truetype'),
+    url('../fonts/Inter_24pt-BlackItalic.ttf') format('truetype'),
+    url('../fonts/Inter_28pt-BlackItalic.ttf') format('truetype');
+  font-display: swap;
+  font-style: italic;
+}

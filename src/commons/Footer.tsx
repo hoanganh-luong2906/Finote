@@ -6,11 +6,11 @@ const Footer = ({ bg = true, margin = 160 }) => {
 				<div className='row'>
 					<div className='col-xl-3'>
 						<a href='#.' className='mil-footer-logo mil-mb-60'>
-							<img src='img/logo-2.png' alt='Plax' width={28} height={32} />
+							<img src='img/logo.svg' alt='Finote' width={120} height={35} />
 						</a>
 					</div>
 					<div className='col-xl-3 mil-mb-60'>
-						<h6 className='mil-mb-60'>Usefull Links</h6>
+						<h6 className='mil-mb-60'>Useful Links</h6>
 						<ul className='mil-footer-list'>
 							<li className='mil-text-m mil-soft mil-mb-15'>
 								<Link href='/'>Home</Link>
@@ -63,7 +63,9 @@ const Footer = ({ bg = true, margin = 160 }) => {
 				<div className='mil-footer-bottom'>
 					<div className='row'>
 						<div className='col-xl-6'>
-							<p className='mil-text-s mil-soft'>© 2024 Finote &amp; Financial Report Web Application</p>
+							<p className='mil-text-s mil-soft'>
+								© 2024 Finote &amp; Financial Report Web Application
+							</p>
 						</div>
 						<div className='col-xl-6'>
 							<p className='mil-text-s mil-text-right mil-sm-text-left mil-soft'>

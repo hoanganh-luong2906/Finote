@@ -1,7 +1,6 @@
-
 import Banner from '@/commons/components/Banner';
 import { CallToAction1 } from '@/commons/components/CallToAction';
-import { Testimonials2 } from '@/commons/components/Testimonials';
+import Testimonials1 from '@/commons/components/Testimonials';
 import PageLayout from '@/commons/PageLayout';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
@@ -9,77 +8,111 @@ const page = () => {
 	const trans = useTranslations('LandingPage');
 
 	return (
-		<PageLayout>
-			{/* banner */}
-			<Banner />
+		<PageLayout bg={false} margin={0}>
+			<Banner
+				title={trans('banner-title')}
+				subTitle={trans('banner-subtitle')}
+				img='/img/home-3/1.png'
+				style={{ maxWidth: '140%', transform: 'translateX(20%)' }}
+			/>
 			{/* banner end */}
-			{/* brands */}
-			<div className='mil-brands mil-p-160-160'>
-				<div className='container'>
-					<h5 className='mil-text-center mil-soft mil-mb-60 mil-up'>
-						{trans('tagline')}
-					</h5>
-					<div className='row justify-content-center'>
-						<div className='col-3 col-md-2 mil-text-center'>
-							<div className='mil-brand'>
-								<img src='img/brands/1.svg' alt='brand' className='mil-up' />
-							</div>
-						</div>
-						<div className='col-3 col-md-2 mil-text-center'>
-							<div className='mil-brand'>
-								<img src='img/brands/2.svg' alt='brand' className='mil-up' />
-							</div>
-						</div>
-						<div className='col-3 col-md-2 mil-text-center'>
-							<div className='mil-brand'>
-								<img src='img/brands/3.svg' alt='brand' className='mil-up' />
-							</div>
-						</div>
-						<div className='col-3 col-md-2'>
-							<div className='mil-brand mil-text-center'>
-								<img src='img/brands/4.svg' alt='brand' className='mil-up' />
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			{/* brands end */}
+
 			{/* features */}
-			<div className='mil-features mil-p-0-80'>
+			<div className='mil-features mil-p-80-80'>
 				<div className='container'>
 					<div className='row flex-sm-row-reverse justify-content-between align-items-center'>
 						<div className='col-xl-6 mil-mb-80'>
-							<h2 className='mil-mb-30 mil-up'>Our essence, your experience</h2>
+							<h2 className='mil-mb-30 mil-up'>{trans('features-title-1')}</h2>
 							<p className='mil-text-m mil-soft mil-mb-60 mil-up'>
-								Visualize your financial progress with detailed reports and graphs <br />
-								that give you visual insights into your spending and saving habits.
+								{trans('features-desc-1a')} <br />
+								{trans('features-desc-1b')}
 							</p>
-							<ul className='mil-list-2 mil-type-2'>
+							<ul className='mil-list-1'>
 								<li>
 									<div className='mil-up'>
-										<h5 className='mil-mb-15'>Plax® Global Service</h5>
-										<p className='mil-text-m mil-soft'>
-											Experience exceptional service around the world. <br />
-											With our Plax® Global Service, we provide assistance <br />
-											and support, wherever you are, to ensure your peace.
+										<h5 className='mil-mb-15 mil-up'>{trans('features-item-1')}</h5>
+										<p className='mil-text-m mil-soft mil-up'>
+											{trans('features-item-desc-1a')} <br />
+											{trans('features-item-desc-1b')}
 										</p>
 									</div>
 								</li>
 								<li>
 									<div className='mil-up'>
-										<h5 className='mil-mb-15'>Personalized Rewards Program</h5>
-										<p className='mil-text-m mil-soft'>
-											Enjoy a rewards program that fits your lifestyle. Earn <br />
-											points with every purchase and access exclusive <br />
-											rewards, from trips to high-quality products.
+										<h5 className='mil-mb-15 mil-up'>{trans('features-item-2')}</h5>
+										<p className='mil-text-m mil-soft mil-up'>
+											{trans('features-item-desc-2a')} <br />
+											{trans('features-item-desc-2b')}
+										</p>
+									</div>
+								</li>
+								<li>
+									<div className='mil-up'>
+										<h5 className='mil-mb-15 mil-up'>{trans('features-item-3')}</h5>
+										<p className='mil-text-m mil-soft mil-up'>
+											{trans('features-item-desc-3a')} <br />
+											{trans('features-item-desc-3b')}
 										</p>
 									</div>
 								</li>
 							</ul>
 						</div>
+						<div className='col-xl-5 mil-mb-80'>
+							<div className='mil-image-frame mil-visible-overflow'>
+								<img src='/img/home-3/2.png' alt='image' className='mil-up' />
+								<div className='mil-img-box mil-accent-box mil-up'>
+									<img src='/img/home-3/icons/1.svg' alt='icon' />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			{/* features end */}
+			{/* features */}
+			<div className='mil-features mil-p-0-80'>
+				<div className='container'>
+					<div className='row justify-content-between align-items-center'>
 						<div className='col-xl-6 mil-mb-80'>
-							<div className='mil-image-frame'>
-								<img src='img/home-2/2.png' alt='image' className='mil-up' />
+							<h2 className='mil-mb-30 mil-up'>{trans('features-title-2')}</h2>
+							<p className='mil-text-m mil-soft mil-mb-60 mil-up'>
+								{trans('features-item-desc-2a')} <br />
+								{trans('features-item-desc-2b')}
+							</p>
+							<ul className='mil-list-2 mil-mb-60'>
+								<li>
+									<div className='mil-up'>
+										<h5 className='mil-mb-15'>{trans('features-item-4')}</h5>
+										<p className='mil-text-m mil-soft'>
+											{trans('features-item-desc-4a')} <br />
+											{trans('features-item-desc-4b')}
+											<br />
+											{trans('features-item-desc-4c')}
+										</p>
+									</div>
+								</li>
+								<li>
+									<div className='mil-up'>
+										<h5 className='mil-mb-15'>{trans('features-item-5')}</h5>
+										<p className='mil-text-m mil-soft'>
+											{trans('features-item-desc-5a')} <br />
+											{trans('features-item-desc-5b')}
+										</p>
+									</div>
+								</li>
+							</ul>
+							<div className='mil-up mil-mb-60'>
+								<Link href='/about' className='mil-btn mil-button-transform mil-m mil-add-arrow'>
+									{trans('cta-title-1')}
+								</Link>
+							</div>
+						</div>
+						<div className='col-xl-4 mil-mb-80'>
+							<div className='mil-image-frame mil-image-frame-2 mil-visible-overflow'>
+								<img src='/img/home-3/3.png' alt='image' className='mil-up' />
+								<div className='mil-img-box mil-left-box mil-left-max mil-soft-box mil-up'>
+									<img src='/img/home-3/icons/2.svg' alt='icon' />
+								</div>
 							</div>
 						</div>
 					</div>
@@ -89,110 +122,47 @@ const page = () => {
 			{/* call to action */}
 			<div className='mil-cta mil-up'>
 				<div className='container'>
-					<div className='mil-out-frame mil-visible mil-illustration-fix mil-p-160-0'>
-						<div className='row align-items-end'>
-							<div className='mil-text-center'>
-								<h2 className='mil-mb-30 mil-up'>
-									Protected coverage on your <br />
-									purchases with Plax Standard
-								</h2>
-								<p className='mil-text-m mil-soft mil-mb-60 mil-up'>
-									Enjoy instant coverage against theft or accidental damage <br />
-									for the first forty-five (45) days from the date of purchase.
-								</p>
-							</div>
-						</div>
-						<div className='mil-illustration-absolute mil-up'>
-							<img src='img/home-2/3.png' alt='illustration' />
-						</div>
-					</div>
-				</div>
-			</div>
-			{/* call to action end */}
-			{/* icon boxes */}
-			<div className='icon-boxes mil-p-160-130'>
-				<div className='container'>
-					<div className='row'>
-						<div className='col-xl-4 mil-mb-30'>
-							<div className='mil-icon-box mil-with-bg mil-center mil-up'>
-								<img src='img/home-2/icons/1.svg' alt='icon' className='mil-mb-30 mil-up' />
-								<h5 className='mil-mb-20 mil-up'>Make your Purchase</h5>
-								<p className='mil-text-s mil-soft mil-up'>
-									Enjoy instant coverage against theft or accidental damage for the first forty-five
-									(45) days from the date of purchase.
-								</p>
-							</div>
-						</div>
-						<div className='col-xl-4 mil-mb-30'>
-							<div className='mil-icon-box mil-with-bg mil-center mil-up'>
-								<img src='img/home-2/icons/2.svg' alt='icon' className='mil-mb-30 mil-up' />
-								<h5 className='mil-mb-20 mil-up'>Manage your Rewards</h5>
-								<p className='mil-text-s mil-soft mil-up'>
-									Rewards easily, Access a personalized rewards program that fits your lifestyle and
-									preferences.
-								</p>
-							</div>
-						</div>
-						<div className='col-xl-4 mil-mb-30'>
-							<div className='mil-icon-box mil-with-bg mil-center mil-up'>
-								<img src='img/home-2/icons/3.svg' alt='icon' className='mil-mb-30 mil-up' />
-								<h5 className='mil-mb-20 mil-up'>Access Exclusive Benefits</h5>
-								<p className='mil-text-s mil-soft mil-up'>
-									From special offers to added security, every transaction is not just a purchase,
-									but an open door to a range.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			{/* icon boxes end */}
-			{/* call to action */}
-			<div className='mil-cta mil-up'>
-				<div className='container'>
-					<div className='mil-out-frame mil-p-160-100'>
+					<div className='mil-out-frame mil-visible mil-image mil-p-160-130'>
 						<div className='row align-items-end'>
 							<div className='col-xl-8 mil-mb-80-adaptive-30'>
-								<h2 className='mil-up'>Innovation and Efficiency in Every Transaction</h2>
+								<h2 className='mil-up mil-light'>{trans('cta-title-1')}</h2>
 							</div>
 							<div className='col-xl-4 mil-mb-80 mil-up'>
-								<Link href='register' className='mil-btn mil-m mil-add-arrow mil-adaptive-right'>
-									Learn More
+								<Link href='/services' className='mil-btn mil-m mil-add-arrow mil-adaptive-right'>
+									{trans('cta-btn-1')}
 								</Link>
 							</div>
 						</div>
 						<div className='row'>
-							<div className='col-xl-4 mil-mb-60'>
-								<div className='mil-icon-box'>
-									<img src='img/home-1/icons/1.svg' alt='icon' className='mil-mb-30 mil-up' />
-									<h5 className='mil-mb-30 mil-up'>Unmatched Speed</h5>
-									<p className='mil-text-m mil-soft mil-up'>
-										Make instant transfers and experience <br />
-										Plax's unparalleled speed with every transaction.
+							<div className='col-xl-4 mil-mb-30'>
+								<Link href='/about' className='mil-icon-box mil-center mil-hover'>
+									<img src='/img/home-3/icons/3.svg' alt='icon' className='mil-mb-30 mil-up' />
+									<h5 className='mil-mb-20 mil-light mil-up'>{trans('cta-feat-title-1')}</h5>
+									<p className='mil-text-m mil-light mil-mb-30 mil-up'>
+										{trans('cta-feat-desc-1')}
 									</p>
-								</div>
+									<div className='mil-link mil-accent mil-up'>{trans('cta-feat-button-1')}</div>
+								</Link>
 							</div>
-							<div className='col-xl-4 mil-mb-60'>
-								<div className='mil-icon-box'>
-									<img src='img/home-1/icons/2.svg' alt='icon' className='mil-mb-30 mil-up' />
-									<h5 className='mil-mb-30 mil-up'>Extensive Global Network</h5>
-									<p className='mil-text-m mil-soft mil-up'>
-										Connect with the world through our <br />
-										global network that spans more than <br />
-										170 countries.
+							<div className='col-xl-4 mil-mb-30'>
+								<Link href='/career' className='mil-icon-box mil-center mil-hover'>
+									<img src='/img/home-3/icons/4.svg' alt='icon' className='mil-mb-30 mil-up' />
+									<h5 className='mil-mb-20 mil-light mil-up'>{trans('cta-feat-title-2')}</h5>
+									<p className='mil-text-m mil-light mil-mb-30 mil-up'>
+										{trans('cta-feat-desc-2')}
 									</p>
-								</div>
+									<div className='mil-link mil-accent mil-up'>{trans('cta-feat-button-2')}</div>
+								</Link>
 							</div>
-							<div className='col-xl-4 mil-mb-60'>
-								<div className='mil-icon-box'>
-									<img src='img/home-1/icons/3.svg' alt='icon' className='mil-mb-30 mil-up' />
-									<h5 className='mil-mb-30 mil-up'>Advanced Security</h5>
-									<p className='mil-text-m mil-soft mil-up'>
-										Protect your assets with our robust <br />
-										security protocols and cutting-edge <br />
-										technologies.
+							<div className='col-xl-4 mil-mb-30'>
+								<Link href='/pricing' className='mil-icon-box mil-center mil-hover'>
+									<img src='/img/home-3/icons/5.svg' alt='icon' className='mil-mb-30 mil-up' />
+									<h5 className='mil-mb-20 mil-light mil-up'>{trans('cta-feat-title-3')}</h5>
+									<p className='mil-text-m mil-light mil-mb-30 mil-up'>
+										{trans('cta-feat-desc-3')}
 									</p>
-								</div>
+									<div className='mil-link mil-accent mil-up'>{trans('cta-feat-button-3')}</div>
+								</Link>
 							</div>
 						</div>
 					</div>
@@ -202,95 +172,89 @@ const page = () => {
 			{/* features */}
 			<div className='mil-features mil-p-160-80'>
 				<div className='container'>
-					<div className='row justify-content-between align-items-center'>
-						<div className='col-xl-6 mil-mb-80'>
-							<h2 className='mil-mb-30 mil-up'>Plax Standard unusual activity detection</h2>
-							<p className='mil-text-m mil-soft mil-mb-60 mil-up'>
-								Keep track of your financial activity and the response to alert. <br />
-								Your security is our priority, are always one step forward.
-							</p>
-							<ul className='mil-list-2 mil-type-2 mil-mb-60'>
-								<li>
-									<div className='mil-up'>
-										<h5 className='mil-mb-15'>Connected device management</h5>
-										<p className='mil-text-m mil-soft'>
-											Plax monitors the devices connected to your <br />
-											account. If we detect activity from a new device or <br />
-											an unusual change, we will notify you.
-										</p>
-									</div>
-								</li>
-							</ul>
-							<div className='mil-up'>
-								<Link href='/about' className='mil-btn mil-button-transform mil-m mil-add-arrow'>
-									More Information
-								</Link>
-							</div>
-						</div>
-						<div className='col-xl-6 mil-mb-80'>
-							<img
-								src='img/home-2/4.png'
-								alt='image'
-								className='mil-up'
-								style={{ width: '115%' }}
-							/>
-						</div>
-					</div>
-				</div>
-			</div>
-			{/* features end */}
-			{/* features */}
-			<div className='mil-features mil-p-0-80'>
-				<div className='container'>
 					<div className='row flex-sm-row-reverse justify-content-between align-items-center'>
 						<div className='col-xl-6 mil-mb-80'>
-							<h2 className='mil-mb-30 mil-up'>Instant Alerts &amp; Notifications with Plax</h2>
+							<h2 className='mil-mb-30 mil-up'>{trans('features-title-3')}</h2>
 							<p className='mil-text-m mil-soft mil-mb-60 mil-up'>
-								Visualize your financial progress with detailed reports and graphs <br />
-								that give you visual insights into your spending and saving habits.
+								{trans('features-desc-3a')} <br />
+								{trans('features-desc-3b')}
 							</p>
-							<ul className='mil-list-2 mil-type-2'>
+							<ul className='mil-list-2'>
 								<li>
 									<div className='mil-up'>
-										<h5 className='mil-mb-15'>Security in real time</h5>
-										<p className='mil-text-m mil-soft'>
-											Notifications allow you to take immediate action in <br />
-											case of unauthorized transactions or unusual activities.
-										</p>
+										<h5 className='mil-mb-15'>{trans('features-item-6')}</h5>
+										<p className='mil-text-m mil-soft'>{trans('features-item-desc-6')}</p>
 									</div>
 								</li>
 								<li>
 									<div className='mil-up'>
-										<h5 className='mil-mb-15'>Notification History</h5>
-										<p className='mil-text-m mil-soft'>
-											Keep track of your financial activity and the response to alert. <br />
-											Your security is our priority, are always one step forward.
-										</p>
+										<h5 className='mil-mb-15'>{trans('features-item-7')}</h5>
+										<p className='mil-text-m mil-soft'>{trans('features-item-desc-7')}</p>
 									</div>
 								</li>
 							</ul>
 						</div>
 						<div className='col-xl-5 mil-mb-80'>
-							<img
-								src='img/home-2/5.png'
-								alt='image'
-								className='mil-up'
-								style={{ width: '100%' }}
-							/>
+							<div className='mil-image-frame mil-visible-overflow'>
+								<img src='/img/home-3/4.png' alt='image' className='mil-up' />
+								<div className='mil-img-box mil-soft-box mil-up'>
+									<img src='/img/home-3/icons/6.svg' alt='icon' />
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 			{/* features end */}
 			{/* testimonials */}
-			<div className='mil-testimonials mil-p-0-160'>
+			<div className='mil-cta mil-up'>
 				<div className='container'>
-					<Testimonials2 />
+					<div className='mil-out-frame mil-bg-1 mil-p-160-160'>
+						<div className='row justify-content-center'>
+							<div className='col-xl-7 mil-relative'>
+								<Testimonials1 />
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 			{/* testimonials end */}
+			{/* facts */}
+			<div className='mil-facts mil-p-160-80'>
+				<div className='container'>
+					<div className='row justify-content-between align-items-center'>
+						<div className='col-xl-6'>
+							<div className='row'>
+								<div className='col-xl-6 mil-sm-text-center mil-mb-30 mil-up'>
+									<p className='h1 mil-display mil-mb-15'>
+										<span className='mil-accent mil-counter' data-number={20}>
+											20
+										</span>
+										<span className='mil-pale'>%</span>
+									</p>
+									<h5>{trans('facts-stat-1')}</h5>
+								</div>
+								<div className='col-xl-6 mil-sm-text-center mil-mb-80 mil-up'>
+									<p className='h1 mil-display mil-mb-15'>
+										<span className='mil-accent mil-counter' data-number={98}>
+											98
+										</span>
+										<span className='mil-pale'>%</span>
+									</p>
+									<h5>{trans('facts-stat-2')}</h5>
+								</div>
+							</div>
+						</div>
+						<div className='col-xl-5 mil-mb-80'>
+							<p className='mil-text-m mil-soft mil-up'>{trans('facts-desc')}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			{/* facts end */}
 			{/* call to action */}
 			<CallToAction1 />
+			{/* call to action end */}
 		</PageLayout>
 	);
 };

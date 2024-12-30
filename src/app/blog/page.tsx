@@ -288,7 +288,7 @@ const page = () => {
         </div>
       </div>
       {/* blog list end */}
-    </Root>
+    </PageLayout>
   );
 };
 export default page;

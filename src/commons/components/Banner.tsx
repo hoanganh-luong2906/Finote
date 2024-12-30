@@ -1,11 +1,15 @@
+import { useTranslations } from 'next-intl';
 import Link from 'next/link';
+
 const Banner = ({
 	title = 'Your Ally for Financial Control',
 	subTitle = 'Send money globally with Plax',
-	img = 'img/home-2/1.png',
+	img = '/img/home-3/1.png',
 	style = { maxWidth: '135%', transform: 'translateX(5%)' },
 	dark = false,
 }) => {
+	const trans = useTranslations('LandingPage');
+
 	return (
 		<div className={`mil-banner mil-dissolve ${dark ? 'mil-dark-2' : ''}`}>
 			<div className='container'>
@@ -16,13 +20,13 @@ const Banner = ({
 							<h1 className='mil-display mil-text-gradient-3 mil-mb-60'>{title}</h1>
 							<div className='mil-buttons-frame'>
 								<Link href='register' className='mil-btn mil-md mil-add-arrow'>
-									Try demo
+									{trans('banner-register')}
 								</Link>
 								<a
 									href='https://www.youtube.com/watch?v=gRhoYxy9Oss'
 									className='mil-btn mil-md mil-light mil-add-play has-popup-video'
 								>
-									Watch tutorial
+									{trans('banner-register')}
 								</a>
 							</div>
 						</div>
@@ -41,22 +45,24 @@ export default Banner;
 
 export const PageBanner = ({
 	title = 'More than a Platform, a Financial Revolution',
-	pageName = 'About us',
+	pageName = 'about' ,
 }) => {
+	const trans = useTranslations('Navigation');
+
 	return (
 		<div className='mil-banner mil-banner-inner mil-dissolve'>
 			<div className='container'>
 				<div className='row align-items-center justify-content-center'>
 					<div className='col-xl-8'>
 						<div className='mil-banner-text mil-text-center'>
-							<div className='mil-text-m mil-mb-20'>{pageName}</div>
+							<div className='mil-text-m mil-mb-20'>{trans(pageName as any) ?? pageName}</div>
 							<h1 className='mil-mb-60'>{title}</h1>
 							<ul className='mil-breadcrumbs mil-center'>
 								<li>
-									<Link href='/'>Home</Link>
+									<Link href='/'>{trans('home')}</Link>
 								</li>
 								<li>
-									<a href='#'>{pageName}</a>
+									<a href='#'>{trans(pageName as any) ?? pageName}</a>
 								</li>
 							</ul>
 						</div>
