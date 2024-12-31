@@ -5,8 +5,8 @@ import { IDropdownOption } from '@/utilities/constants';
 import { useLocale, useTranslations } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { usePathname, useRouter } from 'next/navigation';
+import { useEffect, useRef, useState } from 'react';
 
 const languageOptions: IDropdownOption<'en' | 'vi'>[] = [
 	{ value: 'en', key: 'English' },
@@ -21,9 +21,11 @@ const Header = ({ dark }: any) => {
 	const trans = useTranslations('Navigation');
 	const actionTrans = useTranslations('System');
 	const locale = useLocale();
+	const router = useRouter();
 
 	const [isOpen, setIsOpen] = useState(false);
 	const [selectedOption, setSelectedOption] = useState<string>('');
+	const dropdownRef = useRef<HTMLDivElement>(null);
 
 	useEffect(() => {
 		setSelectedOption(locale);
@@ -32,6 +34,23 @@ const Header = ({ dark }: any) => {
 	const toggleDropdown = () => {
 		setIsOpen(!isOpen);
 	};
+
+	const handleClickOutside = (event: MouseEvent) => {
+		if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+			setIsOpen(false);
+		}
+	};
+
+	useEffect(() => {
+		if (isOpen) {
+			document.addEventListener('click', handleClickOutside);
+		} else {
+			document.removeEventListener('click', handleClickOutside);
+		}
+		return () => {
+			document.removeEventListener('click', handleClickOutside);
+		};
+	}, [isOpen]);
 
 	const handleOptionClick = async (option: IDropdownOption<'en' | 'vi'>) => {
 		const endpoint = '/api/locale';
@@ -49,6 +68,7 @@ const Header = ({ dark }: any) => {
 		if (res.ok) {
 			setSelectedOption(option.value);
 			setIsOpen(false);
+			router.refresh();
 		} else {
 			useNotify({
 				message: actionTrans('locale-update-failed'),
@@ -118,8 +138,8 @@ const Header = ({ dark }: any) => {
 						</li>
 					</ul>
 				</nav>
-				<div className='w-[30vw] flex flex-row justify-end items-center gap-[2vw]'>
-					<div className='relative w-fit h-fit'>
+				<div className='w-[15vw] flex flex-row justify-end items-center gap-[2vw]'>
+					<div ref={dropdownRef} className='relative w-fit h-fit'>
 						<button
 							id='toggler'
 							className='relative border-none p-2 rounded-full transition duration-500 ease-in-out hover:bg-gray-300'

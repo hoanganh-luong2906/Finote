@@ -1,6 +1,9 @@
+import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 
 export const CallToAction1 = () => {
+	const trans = useTranslations('CallToAction');
+
 	return (
 		<div className='mil-cta mil-up'>
 			<div className='container'>
@@ -8,19 +11,21 @@ export const CallToAction1 = () => {
 					<div className='row align-items-end'>
 						<div className='mil-text-center'>
 							<h2 className='mil-mb-30 mil-light mil-up'>
-								Buy with Confidence, Guaranteed <br />
-								Protection for your purchases
+								{trans.rich('v1-title', {
+									br: () => <br />,
+								})}
 							</h2>
 							<p className='mil-text-m mil-dark-soft mil-mb-60 mil-up'>
-								Discover how we make each purchase a safe and reliable <br />
-								experience for you.
+								{trans.rich('v1-subtitle', {
+									br: () => <br />,
+								})}
 							</p>
 							<div className='mil-up mil-mb-60'>
 								<Link
 									href='/register'
 									className='mil-btn mil-button-transform mil-md mil-add-arrow'
 								>
-									Protect My Purchases
+									{trans('v1-button')}
 								</Link>
 							</div>
 						</div>
@@ -35,6 +40,8 @@ export const CallToAction1 = () => {
 };
 
 export const CallToAction2 = () => {
+	const trans = useTranslations('CallToAction');
+
 	return (
 		<div className='mil-cta mil-up'>
 			<div className='container'>
@@ -45,23 +52,25 @@ export const CallToAction2 = () => {
 					<div className='row justify-content-between align-items-center'>
 						<div className='col-xl-7 mil-sm-text-center'>
 							<h2 className='mil-light mil-mb-30 mil-up'>
-								Discover the freedom <br />
-								of Total Financial Control
+								{trans.rich('v2-title', {
+									br: () => <br />,
+								})}
 							</h2>
 							<p className='mil-text-m mil-mb-60 mil-dark-soft mil-up'>
-								Join Plax and take the first step towards a more <br /> balanced and hassle-free
-								financial life.
+								{trans.rich('v2-subtitle', {
+									br: () => <br />,
+								})}
 							</p>
 							<div className='mil-buttons-frame mil-up'>
 								<a href='https://apps.apple.com/' target='_blank' className='mil-btn mil-md'>
-									App Store
+									{trans('v2-button1')}
 								</a>
 								<a
 									href='https://play.google.com/'
 									target='_blank'
 									className='mil-btn mil-border mil-md'
 								>
-									Google Play
+									{trans('v2-button2')}
 								</a>
 							</div>
 						</div>

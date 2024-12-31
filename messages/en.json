@@ -1,4 +1,22 @@
 {
+	"Navigation": {
+		"home": "Home",
+		"about": "About",
+		"services": "Services",
+		"blog": "Blog",
+		"blog-list": "Blog list",
+		"blog-detail": "Blog details",
+		"contact": "Contact",
+		"pages": "Pages",
+		"pages-career": "Career",
+		"pages-career-details": "Career details",
+		"pricing": "Pricing",
+		"register": "Register",
+		"login": "Login"
+	},
+	"System": {
+		"locale-update-failed": "Failed to update site's language"
+	},
 	"LandingPage": {
 		"banner-register": "Try demo",
 		"banner-demo": "Watch tutorial",
@@ -48,25 +66,16 @@
 		"features-item-desc-7": "Enjoy Finote's universal compatibility across Android devices, iOS devices, and desktop platforms, ensuring a seamless experience regardless of which device you prefer to use.",
 		"facts-title": "Finote has positively impacted the financial lives of over a million satisfied users around the world.",
 		"facts-stat-1": "Average Monthly Savings",
-		"facts-stat-2": "Of Users Recommend Finote:",
+		"facts-stat-2": "Of Users Recommend Finote",
 		"facts-desc": "Finote has positively impacted the financial lives of over a million satisfied users around the world, and each time we reveal new milestones that we will share with all our huge community"
 	},
-	"Navigation": {
-		"home": "Home",
-		"about": "About",
-		"services": "Services",
-		"blog": "Blog",
-		"blog-list": "Blog list",
-		"blog-detail": "Blog details",
-		"contact": "Contact",
-		"pages": "Pages",
-		"pages-career": "Career",
-		"pages-career-details": "Career details",
-		"pricing": "Pricing",
-		"register": "Register",
-		"login": "Login"
-	},
-	"System": {
-		"locale-update-failed": "Failed to update site's language"
+	"CallToAction": {
+		"v1-title": "Buy with Confidence, Guaranteed <br></br> Protection for your purchases",
+		"v1-subtitle": "Discover how we make each purchase a safe and reliable <br></br> experience for you.",
+		"v1-button": "Protect My Purchases",
+		"v2-title": "Discover the freedom <br></br> of Total Financial Control",
+		"v2-subtitle": "Join Finote and take the first step towards a more <br></br> balanced and hassle-free financial life.",
+		"v2-button1": "App Store",
+		"v2-button2": "Google Play"
 	}
 }

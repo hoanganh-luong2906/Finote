@@ -223,7 +223,7 @@ const page = () => {
 			<div className='mil-facts mil-p-160-80'>
 				<div className='container'>
 					<div className='row justify-content-between align-items-center'>
-						<div className='col-xl-6'>
+						<div className='col-xl-7'>
 							<div className='row'>
 								<div className='col-xl-6 mil-sm-text-center mil-mb-30 mil-up'>
 									<p className='h1 mil-display mil-mb-15'>
@@ -245,7 +245,7 @@ const page = () => {
 								</div>
 							</div>
 						</div>
-						<div className='col-xl-5 mil-mb-80'>
+						<div className='col-xl-4 mil-mb-80'>
 							<p className='mil-text-m mil-soft mil-up'>{trans('facts-desc')}</p>
 						</div>
 					</div>

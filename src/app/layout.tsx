@@ -18,6 +18,7 @@ import '@css/style.css';
 import { NextIntlClientProvider } from 'next-intl';
 import { getLocale, getMessages } from 'next-intl/server';
 import { Bounce, ToastContainer } from 'react-toastify';
+import { cookies } from 'next/headers';
 
 const secondary_font = Inter({
 	weight: ['400'],
@@ -29,19 +30,20 @@ const secondary_font = Inter({
 });
 
 export const metadata = {
+	icons: ['/img/logo-2.svg'],
 	title: 'Finote | Home',
 	description: 'Finote - Your Financial Partner',
-	icons: ['/img/logo-2.svg'],
 };
 
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
 	const locale = await getLocale();
 	const messages = await getMessages();
+	const currentLocale = (await cookies()).get('locale')?.value || 'en';
 
 	return (
 		<html lang={locale} className={`${secondary_font.variable} no-scrollbar`}>
 			<body>
-				<NextIntlClientProvider messages={messages}>
+				<NextIntlClientProvider messages={messages} locale={currentLocale}>
 					<Preloader />
 					{children}
 				</NextIntlClientProvider>

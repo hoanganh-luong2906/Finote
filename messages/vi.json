@@ -1,4 +1,22 @@
 {
+	"Navigation": {
+		"home": "Trang chủ",
+		"about": "Về chúng tôi",
+		"services": "Dịch vụ",
+		"blog": "Tin tức",
+		"blog-list": "Tất cả",
+		"blog-detail": "Bảng tin",
+		"contact": "Liên hệ",
+		"pages": "Khám phá",
+		"pages-career": "Công việc",
+		"pages-career-details": "Chi tiết công việc",
+		"pricing": "Gói dịch vụ",
+		"register": "Đăng ký",
+		"login": "Đăng nhập"
+	},
+	"System": {
+		"locale-update-failed": "Cập nhật ngôn ngữ thất bại"
+	},
 	"LandingPage": {
 		"banner-register": "Dùng thử bản demo",
 		"banner-demo": "Xem hướng dẫn",
@@ -47,26 +65,17 @@
 		"features-item-7": "Tương thích đa nền tảng",
 		"features-item-desc-7": "Tận hưởng khả năng tương thích đa nền tảng của Finote trên thiết bị Android, iOS và máy tính để bàn, đảm bảo trải nghiệm liền mạch bất kể thiết bị bạn sử dụng.",
 		"facts-title": "Finote đã tạo ảnh hưởng tích cực đến tài chính của hơn một triệu người dùng hài lòng trên toàn thế giới.",
-		"facts-stat-1": "Tiết kiệm trung bình mỗi tháng",
-		"facts-stat-2": "Người dùng đề xuất Finote:",
+		"facts-stat-1": "Tiết kiệm trung bình hằng tháng",
+		"facts-stat-2": "Người dùng đề xuất Finote",
 		"facts-desc": "Finote đã tác động tích cực đến cuộc sống tài chính của hơn một triệu người dùng hài lòng trên toàn thế giới, và mỗi lần chúng tôi đạt được những cột mốc mới, chúng tôi sẽ chia sẻ với cộng đồng lớn mạnh của mình."
 	},
-	"Navigation": {
-		"home": "Trang chủ",
-		"about": "Về chúng tôi",
-		"services": "Dịch vụ",
-		"blog": "Tin tức",
-		"blog-list": "Tất cả",
-		"blog-detail": "Bảng tin",
-		"contact": "Liên hệ",
-		"pages": "Khám phá",
-		"pages-career": "Công việc",
-		"pages-career-details": "Chi tiết công việc",
-		"pricing": "Gói dịch vụ",
-		"register": "Đăng ký",
-		"login": "Đăng nhập"
-	},
-	"System": {
-		"locale-update-failed": "Cập nhật ngôn ngữ thất bại"
+	"CallToAction": {
+		"v1-title": "Mua Sắm Tự Tin, Bảo Vệ <br></br> Đảm Bảo Cho Mọi Giao Dịch",
+		"v1-subtitle": "Khám phá cách chúng tôi mang đến trải nghiệm mua sắm <br></br> an toàn và đáng tin cậy cho bạn.",
+		"v1-button": "Bảo Vệ Giao Dịch Của Tôi",
+		"v2-title": "Khám Phá Tự Do <br></br> Trong Việc Kiểm Soát Tài Chính",
+		"v2-subtitle": "Tham gia Finote để bắt đầu hành trình hướng đến một cuộc sống <br></br> tài chính cân bằng và không lo âu.",
+		"v2-button1": "App Store",
+		"v2-button2": "Google Play"
 	}
 }
