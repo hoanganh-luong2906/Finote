@@ -31,7 +31,7 @@ export const CallToAction1 = () => {
 						</div>
 					</div>
 					<div className='mil-illustration-absolute mil-type-2 mil-up'>
-						<img src='/img/home-3/5.webp' alt='illustration' />
+						<img src='/img/home-3/5.png' alt='illustration' />
 					</div>
 				</div>
 			</div>

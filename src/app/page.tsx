@@ -201,7 +201,7 @@ const page = () => {
 			</div>
 			{/* features end */}
 			{/* testimonials */}
-			<div className='mil-cta mil-up'>
+			{/* <div className='mil-cta mil-up'>
 				<div className='container'>
 					<div className='mil-out-frame mil-bg-1 mil-p-160-160'>
 						<div className='row justify-content-center'>
@@ -211,7 +211,7 @@ const page = () => {
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> */}
 			{/* testimonials end */}
 			{/* facts */}
 			<div className='mil-facts mil-p-160-80'>
