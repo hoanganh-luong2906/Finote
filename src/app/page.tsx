@@ -125,7 +125,7 @@ const page = () => {
 					<div className='mil-out-frame mil-visible mil-image mil-p-160-130'>
 						<div className='row align-items-end'>
 							<div className='col-xl-8 mil-mb-80-adaptive-30'>
-								<h2 className='mil-up mil-light'>{trans('cta-title-1')}</h2>
+								<h2 className='mil-up mil-dark'>{trans('cta-title-1')}</h2>
 							</div>
 							<div className='col-xl-4 mil-mb-80 mil-up'>
 								<Link href='/services' className='mil-btn mil-m mil-add-arrow mil-adaptive-right'>
@@ -137,30 +137,24 @@ const page = () => {
 							<div className='col-xl-4 mil-mb-30'>
 								<Link href='/about' className='mil-icon-box mil-center mil-hover'>
 									<img src='/img/home-3/icons/3.svg' alt='icon' className='mil-mb-30 mil-up' />
-									<h5 className='mil-mb-20 mil-light mil-up'>{trans('cta-feat-title-1')}</h5>
-									<p className='mil-text-m mil-light mil-mb-30 mil-up'>
-										{trans('cta-feat-desc-1')}
-									</p>
+									<h5 className='mil-mb-20 mil-dark mil-up'>{trans('cta-feat-title-1')}</h5>
+									<p className='mil-text-m mil-dark mil-mb-30 mil-up'>{trans('cta-feat-desc-1')}</p>
 									<div className='mil-link mil-accent mil-up'>{trans('cta-feat-button-1')}</div>
 								</Link>
 							</div>
 							<div className='col-xl-4 mil-mb-30'>
 								<Link href='/career' className='mil-icon-box mil-center mil-hover'>
 									<img src='/img/home-3/icons/4.svg' alt='icon' className='mil-mb-30 mil-up' />
-									<h5 className='mil-mb-20 mil-light mil-up'>{trans('cta-feat-title-2')}</h5>
-									<p className='mil-text-m mil-light mil-mb-30 mil-up'>
-										{trans('cta-feat-desc-2')}
-									</p>
+									<h5 className='mil-mb-20 mil-dark mil-up'>{trans('cta-feat-title-2')}</h5>
+									<p className='mil-text-m mil-dark mil-mb-30 mil-up'>{trans('cta-feat-desc-2')}</p>
 									<div className='mil-link mil-accent mil-up'>{trans('cta-feat-button-2')}</div>
 								</Link>
 							</div>
 							<div className='col-xl-4 mil-mb-30'>
 								<Link href='/pricing' className='mil-icon-box mil-center mil-hover'>
 									<img src='/img/home-3/icons/5.svg' alt='icon' className='mil-mb-30 mil-up' />
-									<h5 className='mil-mb-20 mil-light mil-up'>{trans('cta-feat-title-3')}</h5>
-									<p className='mil-text-m mil-light mil-mb-30 mil-up'>
-										{trans('cta-feat-desc-3')}
-									</p>
+									<h5 className='mil-mb-20 mil-dark mil-up'>{trans('cta-feat-title-3')}</h5>
+									<p className='mil-text-m mil-dark mil-mb-30 mil-up'>{trans('cta-feat-desc-3')}</p>
 									<div className='mil-link mil-accent mil-up'>{trans('cta-feat-button-3')}</div>
 								</Link>
 							</div>
