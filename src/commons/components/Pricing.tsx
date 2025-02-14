@@ -25,7 +25,7 @@ const Pricing = () => {
 			<div className='row'>
 				<div className='col-md-4 col-sm-6'>
 					<div className='mil-price-card mil-up mil-mb-30'>
-						<h6 className='mil-mb-15'>Plax Consumer</h6>
+						<h6 className='mil-mb-15'>Finote Consumer</h6>
 						<p className='mil-text-s mil-soft mil-mb-30'>
 							Sending and receiving money in up to 5 countries
 						</p>
@@ -55,7 +55,7 @@ const Pricing = () => {
 				</div>
 				<div className='col-md-4 col-sm-6'>
 					<div className='mil-price-card mil-featured mil-up mil-mb-30'>
-						<h6 className='mil-light mil-mb-15'>Plax Business</h6>
+						<h6 className='mil-light mil-mb-15'>Finote Business</h6>
 						<p className='mil-text-s mil-dark-soft mil-mb-30'>
 							Access to multi-currency accounts and local payments
 						</p>
@@ -85,7 +85,7 @@ const Pricing = () => {
 				</div>
 				<div className='col-md-4 col-sm-6'>
 					<div className='mil-price-card mil-up mil-mb-30'>
-						<h6 className='mil-mb-15'>Plax Enterprise</h6>
+						<h6 className='mil-mb-15'>Finote Enterprise</h6>
 						<p className='mil-text-s mil-soft mil-mb-30'>
 							Secure and reliable transactions at the enterprise level
 						</p>
@@ -142,7 +142,7 @@ export const Pricing2 = () => {
 			<div className='row'>
 				<div className='col-md-4 col-sm-6'>
 					<div className='mil-price-card mil-up mil-mb-30'>
-						<h6 className='mil-light mil-mb-15'>Plax Consumer</h6>
+						<h6 className='mil-light mil-mb-15'>Finote Consumer</h6>
 						<p className='mil-text-s mil-dark-soft mil-mb-30'>
 							Sending and receiving money in up to 5 countries
 						</p>
@@ -172,7 +172,7 @@ export const Pricing2 = () => {
 				</div>
 				<div className='col-md-4 col-sm-6'>
 					<div className='mil-price-card mil-featured mil-up mil-mb-30'>
-						<h6 className='mil-light mil-mb-15'>Plax Business</h6>
+						<h6 className='mil-light mil-mb-15'>Finote Business</h6>
 						<p className='mil-text-s mil-dark-soft mil-mb-30'>
 							Access to multi-currency accounts and local payments
 						</p>
@@ -202,7 +202,7 @@ export const Pricing2 = () => {
 				</div>
 				<div className='col-md-4 col-sm-6'>
 					<div className='mil-price-card mil-up mil-mb-30'>
-						<h6 className='mil-light mil-mb-15'>Plax Enterprise</h6>
+						<h6 className='mil-light mil-mb-15'>Finote Enterprise</h6>
 						<p className='mil-text-s mil-dark-soft mil-mb-30'>
 							Secure and reliable transactions at the enterprise level
 						</p>

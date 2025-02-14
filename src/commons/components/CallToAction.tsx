@@ -31,7 +31,7 @@ export const CallToAction1 = () => {
 						</div>
 					</div>
 					<div className='mil-illustration-absolute mil-type-2 mil-up'>
-						<img src='/img/home-3/5.png' alt='illustration' />
+						<img src='/img/home-3/5.webp' alt='illustration' />
 					</div>
 				</div>
 			</div>
@@ -47,7 +47,7 @@ export const CallToAction2 = () => {
 			<div className='container'>
 				<div
 					className='mil-out-frame mil-p-160-160'
-					style={{ backgroundImage: 'url(img/home-3/5.png)' }}
+					style={{ backgroundImage: 'url(img/home-3/5.webp)' }}
 				>
 					<div className='row justify-content-between align-items-center'>
 						<div className='col-xl-7 mil-sm-text-center'>

@@ -17,7 +17,7 @@ const page = () => {
 							<h2 className='mil-mb-30 mil-up'>Freedom to send, request money globally</h2>
 							<p className='mil-text-m mil-soft mil-mb-30 mil-up'>
 								From sending money to friends and family to receiving payments from around the
-								world, Plax Consumer offers you a simple and instant experience.
+								world, Finote Consumer offers you a simple and instant experience.
 							</p>
 							<div className='mil-up'>
 								<Link href='/price' className='mil-btn mil-m mil-add-arrow'>
@@ -28,7 +28,7 @@ const page = () => {
 						<div className='col-xl-6 mil-mb-80'>
 							<div className='mil-image-frame mil-up'>
 								<img
-									src='img/inner-pages/3.png'
+									src='img/inner-pages/3.webp'
 									alt='image'
 									className='mil-scale-img'
 									data-value-1={1}
@@ -50,7 +50,8 @@ const page = () => {
 							</h2>
 							<p className='mil-text-m mil-soft mil-mb-30 mil-up'>
 								From instant and secure transactions to the flexibility to adapt to global needs,
-								Plax Enterprise offers a reliable platform to drive your company's financial growth.
+								Finote Enterprise offers a reliable platform to drive your company's financial
+								growth.
 							</p>
 							<div className='mil-up'>
 								<Link href='/price' className='mil-btn mil-m mil-add-arrow'>
@@ -61,7 +62,7 @@ const page = () => {
 						<div className='col-xl-6 mil-mb-80'>
 							<div className='mil-image-frame ml-up'>
 								<img
-									src='img/inner-pages/4.png'
+									src='img/inner-pages/4.webp'
 									alt='image'
 									className='mil-scale-img'
 									data-value-1={1}
@@ -79,7 +80,7 @@ const page = () => {
 					<div className='row justify-content-between align-items-center'>
 						<div className='col-xl-5 mil-mb-80'>
 							<h2 className='mil-mb-30 mil-up'>
-								Financial Innovation, discover the Plax Virtual Card
+								Financial Innovation, discover the Finote Virtual Card
 							</h2>
 							<p className='mil-text-m mil-soft mil-mb-30 mil-up'>
 								Discover how this innovative tool boosts financial well-being and provides a safe
@@ -94,7 +95,7 @@ const page = () => {
 						<div className='col-xl-6 mil-mb-80'>
 							<div className='mil-image-frame mil-up'>
 								<img
-									src='img/inner-pages/5.png'
+									src='img/inner-pages/5.webp'
 									alt='image'
 									className='mil-scale-img'
 									data-value-1={1}
@@ -157,11 +158,11 @@ const page = () => {
 					<div className='row justify-content-center'>
 						<div className='col-xl-10'>
 							<h2 className='mil-mb-30'>
-								"At Plax, transparency is not just a promise; It is the cornerstone of our
+								"At Finote, transparency is not just a promise; It is the cornerstone of our
 								relationship with you. We believe that trust is built with clear policies and
 								coherent actions."
 							</h2>
-							<p className='mil-text-m mil-soft mil-mb-60'>- Plax Team</p>
+							<p className='mil-text-m mil-soft mil-mb-60'>- Finote Team</p>
 							<div className='row'>
 								<div className='col-xl-6'>
 									<ul className='mil-list-2 mil-type-2 mil-mb-30'>

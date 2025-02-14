@@ -33,10 +33,10 @@ const Footer = ({ bg = true, margin = 160 }) => {
 						<h6 className='mil-mb-60'>Help</h6>
 						<ul className='mil-footer-list'>
 							<li className='mil-text-m mil-soft mil-mb-15'>
-								999 Rue du Cherche-Midi, 7755500666 Paris, <br />
-								France
+								Metropolitan Area, Thu Duc City, <br />
+								Ho Chi Minh City
 							</li>
-							<li className='mil-text-m mil-soft mil-mb-15'>+001 (808) 555-0111</li>
+							<li className='mil-text-m mil-soft mil-mb-15'>(+84) 977 54 54 50</li>
 							<li className='mil-text-m mil-soft mil-mb-15'>hoanganh.luong2906@gmail.com</li>
 						</ul>
 					</div>

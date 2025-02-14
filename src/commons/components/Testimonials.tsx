@@ -31,8 +31,8 @@ const Testimonials1 = () => {
 							/>
 						</svg>
 						<p className='mil-mb-60 mil-up'>
-							Plax is not just a payments platform, it is a comprehensive solution. The global
-							network, security and variety of options make Plax my number one option for all my
+							Finote is not just a payments platform, it is a comprehensive solution. The global
+							network, security and variety of options make Finote my number one option for all my
 							quisque rutrum transactions. Aenean lost. Etiam ultricies is around.
 						</p>
 						<img src='img/faces/2.jpg' alt='Customer' className='mil-mb-15 mil-up' />
@@ -64,8 +64,8 @@ const Testimonials1 = () => {
 							/>
 						</svg>
 						<p className='mil-mb-60 mil-up'>
-							Plax is not just a payments platform, it is a comprehensive solution. The global
-							network, security and variety of options make Plax my number one option for all my
+							Finote is not just a payments platform, it is a comprehensive solution. The global
+							network, security and variety of options make Finote my number one option for all my
 							quisque rutrum transactions. Aenean lost. Etiam ultricies is around.
 						</p>
 						<img src='img/faces/1.jpg' alt='Customer' className='mil-mb-15 mil-up' />
@@ -97,8 +97,8 @@ const Testimonials1 = () => {
 							/>
 						</svg>
 						<p className='mil-mb-60 mil-up'>
-							Plax is not just a payments platform, it is a comprehensive solution. The global
-							network, security and variety of options make Plax my number one option for all my
+							Finote is not just a payments platform, it is a comprehensive solution. The global
+							network, security and variety of options make Finote my number one option for all my
 							quisque rutrum transactions. Aenean lost. Etiam ultricies is around.
 						</p>
 						<img src='img/faces/3.jpg' alt='Customer' className='mil-mb-15 mil-up' />
@@ -140,7 +140,7 @@ export const Testimonials2 = () => {
 							/>
 						</svg>
 						<p className='mil-text-m mil-mb-30 mil-up'>
-							I had never felt so connected to my finances. The instant alerts from Plax keep me
+							I had never felt so connected to my finances. The instant alerts from Finote keep me
 							informed in real time, giving me a feeling of total control. But the result, the lion
 							needs to drink members.
 						</p>
@@ -170,7 +170,7 @@ export const Testimonials2 = () => {
 							/>
 						</svg>
 						<p className='mil-text-m mil-mb-30 mil-up'>
-							Plax Standard has proven to be more than a card; it is my financial defender.
+							Finote Standard has proven to be more than a card; it is my financial defender.
 							Proactive alerts give me confidence that my security is in good hands.
 						</p>
 						<div className='mil-customer'>

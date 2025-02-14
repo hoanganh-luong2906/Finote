@@ -12,7 +12,7 @@ const page = () => {
 			<Banner
 				title={trans('banner-title')}
 				subTitle={trans('banner-subtitle')}
-				img='/img/home-3/1.png'
+				img='/img/home-3/1.webp'
 				style={{ maxWidth: '140%', transform: 'translateX(20%)' }}
 			/>
 			{/* banner end */}
@@ -59,7 +59,7 @@ const page = () => {
 						</div>
 						<div className='col-xl-5 mil-mb-80'>
 							<div className='mil-image-frame mil-visible-overflow'>
-								<img src='/img/home-3/2.png' alt='image' className='mil-up' />
+								<img src='/img/home-3/2.webp' alt='image' className='mil-up' />
 								<div className='mil-img-box mil-accent-box mil-up'>
 									<img src='/img/home-3/icons/1.svg' alt='icon' />
 								</div>
@@ -109,7 +109,7 @@ const page = () => {
 						</div>
 						<div className='col-xl-4 mil-mb-80'>
 							<div className='mil-image-frame mil-image-frame-2 mil-visible-overflow'>
-								<img src='/img/home-3/3.png' alt='image' className='mil-up' />
+								<img src='/img/home-3/3.webp' alt='image' className='mil-up' />
 								<div className='mil-img-box mil-left-box mil-left-max mil-soft-box mil-up'>
 									<img src='/img/home-3/icons/2.svg' alt='icon' />
 								</div>
@@ -196,7 +196,7 @@ const page = () => {
 						</div>
 						<div className='col-xl-5 mil-mb-80'>
 							<div className='mil-image-frame mil-visible-overflow'>
-								<img src='/img/home-3/4.png' alt='image' className='mil-up' />
+								<img src='/img/home-3/4.webp' alt='image' className='mil-up' />
 								<div className='mil-img-box mil-soft-box mil-up'>
 									<img src='/img/home-3/icons/6.svg' alt='icon' />
 								</div>

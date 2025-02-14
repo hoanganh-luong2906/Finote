@@ -3,8 +3,8 @@ import Link from 'next/link';
 
 const Banner = ({
 	title = 'Your Ally for Financial Control',
-	subTitle = 'Send money globally with Plax',
-	img = '/img/home-3/1.png',
+	subTitle = 'Send money globally with Finote',
+	img = '/img/home-3/1.webp',
 	style = { maxWidth: '135%', transform: 'translateX(5%)' },
 	dark = false,
 }) => {
@@ -45,7 +45,7 @@ export default Banner;
 
 export const PageBanner = ({
 	title = 'More than a Platform, a Financial Revolution',
-	pageName = 'about' ,
+	pageName = 'about',
 }) => {
 	const trans = useTranslations('Navigation');
 
