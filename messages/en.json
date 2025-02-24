@@ -18,7 +18,8 @@
 		"locale-update-failed": "Failed to update site's language"
 	},
 	"LandingPage": {
-		"banner-register": "Try demo",
+		"banner-register1": "Register now",
+		"banner-register2": "Try demo",
 		"banner-demo": "Watch tutorial",
 		"banner-subtitle": "Manage your Finance with Finote",
 		"banner-title": "Your Financial Control Companion",

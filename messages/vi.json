@@ -18,7 +18,8 @@
 		"locale-update-failed": "Cập nhật ngôn ngữ thất bại"
 	},
 	"LandingPage": {
-		"banner-register": "Dùng thử bản demo",
+		"banner-register1": "Đăng ký ngay",
+		"banner-register2": "Dùng thử bản demo",
 		"banner-demo": "Xem hướng dẫn",
 		"banner-subtitle": "Quản lý chi tiêu với Finote",
 		"banner-title": "Trợ thủ quản lý tài chính của bạn",

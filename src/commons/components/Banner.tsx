@@ -20,13 +20,13 @@ const Banner = ({
 							<h1 className='mil-display mil-text-gradient-3 mil-mb-60'>{title}</h1>
 							<div className='mil-buttons-frame'>
 								<Link href='register' className='mil-btn mil-md mil-add-arrow'>
-									{trans('banner-register')}
+									{trans('banner-register1')}
 								</Link>
 								<a
 									href='https://www.youtube.com/watch?v=gRhoYxy9Oss'
 									className='mil-btn mil-md mil-light mil-add-play has-popup-video'
 								>
-									{trans('banner-register')}
+									{trans('banner-register2')}
 								</a>
 							</div>
 						</div>
