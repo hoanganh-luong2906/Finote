@@ -32,7 +32,7 @@ const Header = ({ dark }: any) => {
 	}, [locale]);
 
 	const toggleDropdown = () => {
-		setIsOpen(!isOpen);
+		setIsOpen(true);
 	};
 
 	const handleClickOutside = (event: MouseEvent) => {
@@ -144,6 +144,7 @@ const Header = ({ dark }: any) => {
 							id='toggler'
 							className='relative border-none p-2 rounded-full transition duration-500 ease-in-out hover:bg-gray-300'
 							onClick={toggleDropdown}
+							onMouseEnter={toggleDropdown}
 						>
 							<Image
 								className='!opacity-50'

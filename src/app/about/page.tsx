@@ -1,8 +1,10 @@
-import LocalesLayout from '@/app/layout';
 import { CallToAction2 } from '@/commons/components/CallToAction';
 import PageLayout from '@/commons/PageLayout';
+import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 const page = () => {
+	const trans = useTranslations('About');
+	const navTrans = useTranslations('Navigation');
 	return (
 		<PageLayout>
 			<div className='mil-banner mil-banner-inner mil-dissolve'>
@@ -10,14 +12,14 @@ const page = () => {
 					<div className='row align-items-center justify-content-center'>
 						<div className='col-xl-8'>
 							<div className='mil-banner-text mil-text-center'>
-								<div className='mil-text-m mil-mb-20'>About us</div>
-								<h1 className='mil-mb-60'>More than a Platform, a Financial Revolution</h1>
+								<div className='mil-text-m mil-mb-20'>{trans('title')}</div>
+								<h1 className='mil-mb-60'>{trans('subtitle')}</h1>
 								<ul className='mil-breadcrumbs mil-center'>
 									<li>
-										<Link href='/'>Home</Link>
+										<Link href='/'>{navTrans('home')}</Link>
 									</li>
 									<li>
-										<Link href='about'>About us</Link>
+										<Link href='about'>{navTrans('about')}</Link>
 									</li>
 								</ul>
 							</div>
@@ -31,20 +33,14 @@ const page = () => {
 				<div className='container'>
 					<div className='row justify-content-between align-items-center'>
 						<div className='col-xl-5 mil-mb-80'>
-							<h2 className='mil-mb-30 mil-up'>The Vision that drives our Team</h2>
-							<p className='mil-text-m mil-soft mil-mb-60 mil-up'>
-								Explore the foundations of Finote and how our purpose-driven start has shaped our
-								identity. From initial challenges to realizing our vision of simplifying
-								cross-border payments, this purposeful journey has led Finote to become a leading
-								force in the financial revolution.
-							</p>
+							<h2 className='mil-mb-30 mil-up'>{trans('vision-title')}</h2>
+							<p className='mil-text-m mil-soft mil-mb-60 mil-up'>{trans('vision-description')}</p>
 							<ul className='mil-list-2 mil-type-2'>
 								<li>
 									<div className='mil-up'>
-										<h5 className='mil-mb-15'>Transformative Vision</h5>
+										<h5 className='mil-mb-15'>{trans('transformative-vision-title')}</h5>
 										<p className='mil-text-m mil-soft'>
-											Discover how Finote's initial vision was focused on transforming the way
-											people transact globally.
+											{trans('transformative-vision-description')}
 										</p>
 									</div>
 								</li>
@@ -74,18 +70,18 @@ const page = () => {
 								<span className='mil-accent mil-counter' data-number={7}>
 									7
 								</span>
-								<span className='mil-pale'>M</span>
+								<span className='mil-pale'>{trans('currency')}</span>
 							</p>
-							<h5>Registered Users</h5>
+							<h5>{trans('registered-users-title')}</h5>
 						</div>
 						<div className='col-xl-4 mil-sm-text-center mil-mb-30 mil-up'>
 							<p className='h1 mil-display mil-mb-15'>
 								<span className='mil-accent mil-counter' data-number='1.6'>
 									1.6
 								</span>
-								<span className='mil-pale'>M</span>
+								<span className='mil-pale'>{trans('currency')}</span>
 							</p>
-							<h5>Regular Users</h5>
+							<h5>{trans('regular-users-title')}</h5>
 						</div>
 						<div className='col-xl-4 mil-sm-text-center mil-mb-30 mil-up'>
 							<p className='h1 mil-display mil-mb-15'>
@@ -94,7 +90,7 @@ const page = () => {
 								</span>
 								<span className='mil-pale'>+</span>
 							</p>
-							<h5>Countries with our coverage</h5>
+							<h5>{trans('countries-coverage-title')}</h5>
 						</div>
 					</div>
 				</div>
@@ -107,8 +103,9 @@ const page = () => {
 						<div className='row justify-content-center mil-text-center'>
 							<div className='col-xl-8 mil-mb-80-adaptive-30'>
 								<h2 className='mil-up'>
-									Our Strengths: The Trust <br />
-									Base of our users
+									{trans.rich('strengths-title', {
+										br: () => <br />,
+									})}
 								</h2>
 							</div>
 						</div>
@@ -116,31 +113,24 @@ const page = () => {
 							<div className='col-xl-4 mil-mb-60'>
 								<div className='mil-icon-box'>
 									<img src='img/inner-pages/icons/1.svg' alt='icon' className='mil-mb-30 mil-up' />
-									<h5 className='mil-mb-20 mil-up'>Connected Global Network</h5>
+									<h5 className='mil-mb-20 mil-up'>{trans('global-network-title')}</h5>
 									<p className='mil-text-m mil-soft mil-up'>
-										Discover how our global network, spanning more than 170 countries, facilitates
-										international transactions and connects people around the world.
+										{trans('global-network-description')}
 									</p>
 								</div>
 							</div>
 							<div className='col-xl-4 mil-mb-60'>
 								<div className='mil-icon-box'>
 									<img src='img/inner-pages/icons/2.svg' alt='icon' className='mil-mb-30 mil-up' />
-									<h5 className='mil-mb-20 mil-up'>Robust Security</h5>
-									<p className='mil-text-m mil-soft mil-up'>
-										Learn about the security standards that are at the heart of Finote, guaranteeing
-										the protection of our users' financial and personal information.
-									</p>
+									<h5 className='mil-mb-20 mil-up'>{trans('security-title')}</h5>
+									<p className='mil-text-m mil-soft mil-up'>{trans('security-description')}</p>
 								</div>
 							</div>
 							<div className='col-xl-4 mil-mb-60'>
 								<div className='mil-icon-box'>
 									<img src='img/inner-pages/icons/3.svg' alt='icon' className='mil-mb-30 mil-up' />
-									<h5 className='mil-mb-20 mil-up'>Continuous Innovation</h5>
-									<p className='mil-text-m mil-soft mil-up'>
-										Explore how constant innovation drives our growth, allowing us to offer advanced
-										and accessible financial solutions.
-									</p>
+									<h5 className='mil-mb-20 mil-up'>{trans('innovation-title')}</h5>
+									<p className='mil-text-m mil-soft mil-up'>{trans('innovation-description')}</p>
 								</div>
 							</div>
 						</div>
@@ -153,27 +143,20 @@ const page = () => {
 				<div className='container'>
 					<div className='row flex-sm-row-reverse justify-content-between align-items-center'>
 						<div className='col-xl-6 mil-mb-80'>
-							<h2 className='mil-mb-30 mil-up'>Our Values are foundations of Trust</h2>
-							<p className='mil-text-m mil-soft mil-mb-60 mil-up'>
-								Our values, from transparency to accountability, are the foundation of our
-								organizational culture and reflect our unwavering.
-							</p>
+							<h2 className='mil-mb-30 mil-up'>{trans('values-title')}</h2>
+							<p className='mil-text-m mil-soft mil-mb-60 mil-up'>{trans('values-description')}</p>
 							<ul className='mil-list-2 mil-type-2'>
 								<li>
 									<div className='mil-up'>
-										<h5 className='mil-mb-15'>Absolute Transparency:</h5>
-										<p className='mil-text-m mil-soft'>
-											Discover how transparency is ingrained in our culture, providing our users
-											with clarity and confidence in every transaction.
-										</p>
+										<h5 className='mil-mb-15'>{trans('transparency-title')}</h5>
+										<p className='mil-text-m mil-soft'>{trans('transparency-description')}</p>
 									</div>
 								</li>
 								<li>
 									<div className='mil-up'>
-										<h5 className='mil-mb-15'>Commitment to Safety:</h5>
+										<h5 className='mil-mb-15'>{trans('commitment-to-safety-title')}</h5>
 										<p className='mil-text-m mil-soft'>
-											Explore our unwavering commitment to security, ensuring every transaction is
-											conducted with the highest standards of protection.
+											{trans('commitment-to-safety-description')}
 										</p>
 									</div>
 								</li>
@@ -195,7 +178,7 @@ const page = () => {
 			</div>
 			{/* features end */}
 			{/* team */}
-			<div className='mil-cta mil-up'>
+			{/* <div className='mil-cta mil-up'>
 				<div className='container'>
 					<div className='mil-out-frame mil-visible mil-image mil-p-160-130'>
 						<div className='row justify-content-center mil-text-center'>
@@ -243,28 +226,23 @@ const page = () => {
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> */}
 			{/* team */}
 			{/* quote */}
 			<div className='mil-quote mil-p-160-130'>
 				<div className='container'>
 					<div className='row justify-content-center'>
 						<div className='col-xl-10'>
-							<h2 className='mil-mb-30'>
-								"At Finote, transparency is not just a promise; It is the cornerstone of our
-								relationship with you. We believe that trust is built with clear policies and
-								coherent actions."
-							</h2>
-							<p className='mil-text-m mil-soft mil-mb-60'>- Finote Team</p>
+							<h2 className='mil-mb-30'>{trans('quote')}</h2>
+							<p className='mil-text-m mil-soft mil-mb-60'>{trans('quote-author')}</p>
 							<div className='row'>
 								<div className='col-xl-6'>
 									<ul className='mil-list-2 mil-type-2 mil-mb-30'>
 										<li>
 											<div className='mil-up'>
-												<h5 className='mil-mb-15'>Privacy policies</h5>
+												<h5 className='mil-mb-15'>{trans('privacy-policies-title')}</h5>
 												<p className='mil-text-m mil-soft'>
-													Your privacy is our priority. We never share your information with third
-													parties without your express consent.
+													{trans('privacy-policies-description')}
 												</p>
 											</div>
 										</li>
@@ -274,10 +252,9 @@ const page = () => {
 									<ul className='mil-list-2 mil-type-2 mil-mb-30'>
 										<li>
 											<div className='mil-up'>
-												<h5 className='mil-mb-15'>Data protection</h5>
+												<h5 className='mil-mb-15'>{trans('data-protection-title')}</h5>
 												<p className='mil-text-m mil-soft'>
-													We are committed to protecting your personal and financial data with the
-													highest security measures
+													{trans('data-protection-description')}
 												</p>
 											</div>
 										</li>
