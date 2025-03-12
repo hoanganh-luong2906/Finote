@@ -1,10 +1,13 @@
 import { PageBanner } from '@/commons/components/Banner';
 import PageLayout from '@/commons/PageLayout';
+import { useTranslations } from 'next-intl';
 import Link from 'next/link';
+
 const page = () => {
+	const trans = useTranslations('Blog');
 	return (
 		<PageLayout>
-			<PageBanner pageName='Blog' title='Your Source of Financial Information' />
+			<PageBanner pageName='Blog' title={trans('blog-title')} />
 
 			{/* banner end */}
 			{/* blog list */}
@@ -23,8 +26,8 @@ const page = () => {
 									/>
 								</div>
 								<div className='mil-descr'>
-									<p className='mil-text-xs mil-accent mil-mb-15'>Financial Advice</p>
-									<h4>How to Send Money Safely</h4>
+									<p className='mil-text-xs mil-accent mil-mb-15'>{trans('financial-advice')}</p>
+									<h4>{trans('how-to-send-money-safely')}</h4>
 								</div>
 							</Link>
 						</div>
@@ -40,8 +43,8 @@ const page = () => {
 									/>
 								</div>
 								<div className='mil-descr'>
-									<p className='mil-text-xs mil-accent mil-mb-15'>Personal Finance</p>
-									<h4>The Benefits of Using Virtual Cards</h4>
+									<p className='mil-text-xs mil-accent mil-mb-15'>{trans('personal-finance')}</p>
+									<h4>{trans('benefits-virtual-cards')}</h4>
 								</div>
 							</Link>
 						</div>
@@ -57,8 +60,8 @@ const page = () => {
 									/>
 								</div>
 								<div className='mil-descr'>
-									<p className='mil-text-xs mil-accent mil-mb-15'>Business Payments</p>
-									<h4>How to Optimize Business Payments</h4>
+									<p className='mil-text-xs mil-accent mil-mb-15'>{trans('business-payments')}</p>
+									<h4>{trans('optimize-business-payments')}</h4>
 								</div>
 							</Link>
 						</div>
@@ -74,8 +77,8 @@ const page = () => {
 									/>
 								</div>
 								<div className='mil-descr'>
-									<p className='mil-text-xs mil-accent mil-mb-15'>Financial Inclusion</p>
-									<h4>The Importance of Financial Inclusion in the world</h4>
+									<p className='mil-text-xs mil-accent mil-mb-15'>{trans('financial-inclusion')}</p>
+									<h4>{trans('importance-financial-inclusion')}</h4>
 								</div>
 							</Link>
 						</div>
@@ -91,8 +94,8 @@ const page = () => {
 									/>
 								</div>
 								<div className='mil-descr'>
-									<p className='mil-text-xs mil-accent mil-mb-15'>Product Updates</p>
-									<h4>New Features in Finote Enterprise: What Can You Expect?</h4>
+									<p className='mil-text-xs mil-accent mil-mb-15'>{trans('product-updates')}</p>
+									<h4>{trans('new-features-finote-enterprise')}</h4>
 								</div>
 							</Link>
 						</div>
@@ -108,8 +111,8 @@ const page = () => {
 									/>
 								</div>
 								<div className='mil-descr'>
-									<p className='mil-text-xs mil-accent mil-mb-15'>Savings Tips</p>
-									<h4>Tips to Save on International Transactions</h4>
+									<p className='mil-text-xs mil-accent mil-mb-15'>{trans('savings-tips')}</p>
+									<h4>{trans('save-on-international-transactions')}</h4>
 								</div>
 							</Link>
 						</div>
@@ -125,8 +128,8 @@ const page = () => {
 									/>
 								</div>
 								<div className='mil-descr'>
-									<p className='mil-text-xs mil-accent mil-mb-15'>Financial Advice</p>
-									<h4>How to Send Money Safely</h4>
+									<p className='mil-text-xs mil-accent mil-mb-15'>{trans('financial-advice')}</p>
+									<h4>{trans('how-to-send-money-safely')}</h4>
 								</div>
 							</Link>
 						</div>
@@ -142,8 +145,8 @@ const page = () => {
 									/>
 								</div>
 								<div className='mil-descr'>
-									<p className='mil-text-xs mil-accent mil-mb-15'>Personal Finance</p>
-									<h4>The Benefits of Using Virtual Cards</h4>
+									<p className='mil-text-xs mil-accent mil-mb-15'>{trans('personal-finance')}</p>
+									<h4>{trans('benefits-virtual-cards')}</h4>
 								</div>
 							</Link>
 						</div>
@@ -159,8 +162,8 @@ const page = () => {
 									/>
 								</div>
 								<div className='mil-descr'>
-									<p className='mil-text-xs mil-accent mil-mb-15'>Business Payments</p>
-									<h4>How to Optimize Business Payments</h4>
+									<p className='mil-text-xs mil-accent mil-mb-15'>{trans('business-payments')}</p>
+									<h4>{trans('optimize-business-payments')}</h4>
 								</div>
 							</Link>
 						</div>
@@ -168,7 +171,7 @@ const page = () => {
 							<Link href='publication' className='mil-blog-card mil-mb-30 mil-up'>
 								<div className='mil-card-cover'>
 									<img
-										src='img/inner-pages/blog/10.png'
+										src='img/inner-pages/blog/10.webp'
 										alt='cover'
 										className='mil-scale-img'
 										data-value-1={1}
@@ -176,8 +179,8 @@ const page = () => {
 									/>
 								</div>
 								<div className='mil-descr'>
-									<p className='mil-text-xs mil-accent mil-mb-15'>Financial Inclusion</p>
-									<h4>The Importance of Financial Inclusion in the world</h4>
+									<p className='mil-text-xs mil-accent mil-mb-15'>{trans('financial-inclusion')}</p>
+									<h4>{trans('importance-financial-inclusion')}</h4>
 								</div>
 							</Link>
 						</div>
@@ -185,7 +188,7 @@ const page = () => {
 							<Link href='publication' className='mil-blog-card mil-mb-30 mil-up'>
 								<div className='mil-card-cover'>
 									<img
-										src='img/inner-pages/blog/11.png'
+										src='img/inner-pages/blog/11.webp'
 										alt='cover'
 										className='mil-scale-img'
 										data-value-1={1}
@@ -193,8 +196,8 @@ const page = () => {
 									/>
 								</div>
 								<div className='mil-descr'>
-									<p className='mil-text-xs mil-accent mil-mb-15'>Product Updates</p>
-									<h4>New Features in Finote Enterprise: What Can You Expect?</h4>
+									<p className='mil-text-xs mil-accent mil-mb-15'>{trans('product-updates')}</p>
+									<h4>{trans('new-features-finote-enterprise')}</h4>
 								</div>
 							</Link>
 						</div>
@@ -202,7 +205,7 @@ const page = () => {
 							<Link href='publication' className='mil-blog-card mil-mb-30 mil-up'>
 								<div className='mil-card-cover'>
 									<img
-										src='img/inner-pages/blog/12.png'
+										src='img/inner-pages/blog/12.webp'
 										alt='cover'
 										className='mil-scale-img'
 										data-value-1={1}
@@ -210,15 +213,15 @@ const page = () => {
 									/>
 								</div>
 								<div className='mil-descr'>
-									<p className='mil-text-xs mil-accent mil-mb-15'>Savings Tips</p>
-									<h4>Tips to Save on International Transactions</h4>
+									<p className='mil-text-xs mil-accent mil-mb-15'>{trans('savings-tips')}</p>
+									<h4>{trans('save-on-international-transactions')}</h4>
 								</div>
 							</Link>
 						</div>
 					</div>
 					<div className='mil-text-center mil-mt-30 mil-up'>
 						<a href='#' className='mil-btn mil-m mil-add-arrow'>
-							Loads more publications
+							{trans('loads-more-publications')}
 						</a>
 					</div>
 				</div>
@@ -227,4 +230,5 @@ const page = () => {
 		</PageLayout>
 	);
 };
+
 export default page;

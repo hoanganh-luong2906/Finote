@@ -123,12 +123,6 @@ const Header = ({ dark }: any) => {
 							<a href='#.'>{trans('pages')}</a>
 							<ul>
 								<li>
-									<Link href='career'>{trans('pages-career')}</Link>
-								</li>
-								<li>
-									<Link href='career-details'>{trans('pages-career-details')}</Link>
-								</li>
-								<li>
 									<Link href='price'>{trans('pricing')}</Link>
 								</li>
 								<li>

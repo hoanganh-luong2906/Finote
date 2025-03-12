@@ -49,20 +49,27 @@ export const PageBanner = ({
 }) => {
 	const trans = useTranslations('Navigation');
 
+	const getFirstWordLowerCase = (str: string) => {
+		const firstWord = str.split(' ')[0];
+		return firstWord.toLocaleLowerCase();
+	};
+
 	return (
 		<div className='mil-banner mil-banner-inner mil-dissolve'>
 			<div className='container'>
 				<div className='row align-items-center justify-content-center'>
 					<div className='col-xl-8'>
 						<div className='mil-banner-text mil-text-center'>
-							<div className='mil-text-m mil-mb-20'>{trans(pageName as any) ?? pageName}</div>
+							<div className='mil-text-m mil-mb-20'>
+								{trans(getFirstWordLowerCase(pageName) as any) ?? pageName}
+							</div>
 							<h1 className='mil-mb-60'>{title}</h1>
 							<ul className='mil-breadcrumbs mil-center'>
 								<li>
 									<Link href='/'>{trans('home')}</Link>
 								</li>
 								<li>
-									<a href='#'>{trans(pageName as any) ?? pageName}</a>
+									<a href='#'>{trans(getFirstWordLowerCase(pageName) as any) ?? pageName}</a>
 								</li>
 							</ul>
 						</div>

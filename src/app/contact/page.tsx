@@ -1,11 +1,13 @@
 import { PageBanner } from '@/commons/components/Banner';
 import { CallToAction2 } from '@/commons/components/CallToAction';
 import PageLayout from '@/commons/PageLayout';
+import { useTranslations } from 'next-intl';
 
 const page = () => {
+	const trans = useTranslations('Contact');
 	return (
 		<PageLayout bg={false}>
-			<PageBanner pageName='Contact us' title='Connect with Us: We are Here to Help You' />
+			<PageBanner pageName='Contact us' title={trans('title')} />
 
 			{/* contact */}
 			<div className='mil-blog-list mil-p-0-160'>
@@ -18,7 +20,7 @@ const page = () => {
 										<input
 											className='mil-input mil-up'
 											type='text'
-											placeholder='Name'
+											placeholder={trans('input-name')}
 											name='name'
 										/>
 									</div>
@@ -26,7 +28,7 @@ const page = () => {
 										<input
 											className='mil-input mil-up'
 											type='email'
-											placeholder='Email'
+											placeholder={trans('input-email')}
 											name='email'
 										/>
 									</div>
@@ -34,7 +36,7 @@ const page = () => {
 										<input
 											className='mil-input mil-up'
 											type='tel'
-											placeholder='Telephone number'
+											placeholder={trans('input-tele')}
 											name='tel'
 										/>
 									</div>
@@ -43,7 +45,7 @@ const page = () => {
 											cols={30}
 											rows={10}
 											className='mil-up'
-											placeholder='Message'
+											placeholder={trans('input-message')}
 											name='message'
 											defaultValue={''}
 										/>
@@ -54,29 +56,23 @@ const page = () => {
 										<input type='checkbox' id='checkbox' name='checkmark' defaultChecked />
 										<label htmlFor='checkbox' />
 									</div>
-									<p className='mil-text-xs mil-soft'>
-										I agree that the data submitted, collected and stored *
-									</p>
+									<p className='mil-text-xs mil-soft'>{trans('term-agreement')}</p>
 								</div>
 								<div className='mil-up'>
 									<button type='submit' className='mil-btn mil-m'>
-										Send Message
+										{trans('send-msg')}
 									</button>
 								</div>
 							</form>
 							<div className='alert-success' style={{ display: 'none' }}>
-								<h5>Thanks, your message is sent successfully.</h5>
+								<h5>{trans('success-alert')}</h5>
 							</div>
 							<div className='mil-p-160-0'>
-								<h5 className='mil-mb-30 mil-up'>We are available on the following channels:</h5>
-								<p className='mil-text-m mil-soft mil-mb-10 mil-up'>
-									Address: 999 Rue du Cherche-Midi, 7755500666 Paris, France
-								</p>
-								<p className='mil-text-m mil-soft mil-mb-10 mil-up'>
-									Telephone: +001 (808) 555-0111
-								</p>
-								<p className='mil-text-m mil-soft mil-mb-10 mil-up'>Fax: +001 (808) 555-0112</p>
-								<p className='mil-text-m mil-soft mil-up'>Email: hoanganh.luong2906@gmail.com</p>
+								<h5 className='mil-mb-30 mil-up'>{trans('contact-channel')}</h5>
+								<p className='mil-text-m mil-soft mil-mb-10 mil-up'>{trans('address')}</p>
+								<p className='mil-text-m mil-soft mil-mb-10 mil-up'>{trans('phone')}</p>
+								<p className='mil-text-m mil-soft mil-mb-10 mil-up'>{trans('fax')}</p>
+								<p className='mil-text-m mil-soft mil-up'>{trans('email')}</p>
 							</div>
 						</div>
 					</div>

@@ -1,5 +1,8 @@
+import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 const Footer = ({ bg = true, margin = 160 }) => {
+	const trans = useTranslations('Navigation');
+
 	return (
 		<footer className={`${bg ? 'mil-footer-with-bg' : ''} mil-p-${margin}-0 `}>
 			<div className='container'>
@@ -10,41 +13,40 @@ const Footer = ({ bg = true, margin = 160 }) => {
 						</a>
 					</div>
 					<div className='col-xl-3 mil-mb-60'>
-						<h6 className='mil-mb-60'>Useful Links</h6>
+						<h6 className='mil-mb-60'>{trans('nav-desc')}</h6>
 						<ul className='mil-footer-list'>
 							<li className='mil-text-m mil-soft mil-mb-15'>
-								<Link href='/'>Home</Link>
+								<Link href='/'>{trans('home')}</Link>
 							</li>
 							<li className='mil-text-m mil-soft mil-mb-15'>
-								<Link href='about'>About Us</Link>
+								<Link href='about'>{trans('about')}</Link>
 							</li>
 							<li className='mil-text-m mil-soft mil-mb-15'>
-								<Link href='contact'>Contact Us</Link>
+								<Link href='contact'>{trans('contact')}</Link>
 							</li>
 							<li className='mil-text-m mil-soft mil-mb-15'>
-								<Link href='services'>Services</Link>
+								<Link href='services'>{trans('services')}</Link>
 							</li>
 							<li className='mil-text-m mil-soft mil-mb-15'>
-								<Link href='price'>Pricing</Link>
+								<Link href='price'>{trans('pricing')}</Link>
 							</li>
 						</ul>
 					</div>
 					<div className='col-xl-3 mil-mb-60'>
-						<h6 className='mil-mb-60'>Help</h6>
+						<h6 className='mil-mb-60'>{trans('contact-desc')}</h6>
 						<ul className='mil-footer-list'>
 							<li className='mil-text-m mil-soft mil-mb-15'>
-								Metropolitan Area, Thu Duc City, <br />
-								Ho Chi Minh City
+								{trans.rich('location', {
+									br: () => <br />,
+								})}
 							</li>
-							<li className='mil-text-m mil-soft mil-mb-15'>(+84) 977 54 54 50</li>
-							<li className='mil-text-m mil-soft mil-mb-15'>hoanganh.luong2906@gmail.com</li>
+							<li className='mil-text-m mil-soft mil-mb-15'>{trans('phone')}</li>
+							<li className='mil-text-m mil-soft mil-mb-15'>{trans('email')}</li>
 						</ul>
 					</div>
 					<div className='col-xl-3 mil-mb-80'>
-						<h6 className='mil-mb-60'>Newsletter</h6>
-						<p className='mil-text-xs mil-soft mil-mb-15'>
-							Subscribe to get the latest news form us
-						</p>
+						<h6 className='mil-mb-60'>{trans('helper-desc')}</h6>
+						<p className='mil-text-xs mil-soft mil-mb-15'>{trans('helper-title')}</p>
 						<form id='subscribeForm' className='mil-subscripe-form-footer'>
 							<input className='mil-input' name='EMAIL' type='email' placeholder='Email' />
 							<button type='submit'>
@@ -55,7 +57,7 @@ const Footer = ({ bg = true, margin = 160 }) => {
 									<input type='checkbox' id='checkbox' defaultChecked />
 									<label htmlFor='checkbox' />
 								</div>
-								<p className='mil-text-xs mil-soft'>Subscribe to get the latest news</p>
+								<p className='mil-text-xs mil-soft'>{trans('helper-cta')}</p>
 							</div>
 						</form>
 					</div>
@@ -63,13 +65,11 @@ const Footer = ({ bg = true, margin = 160 }) => {
 				<div className='mil-footer-bottom'>
 					<div className='row'>
 						<div className='col-xl-6'>
-							<p className='mil-text-s mil-soft'>
-								© 2024 Finote &amp; Financial Report Web Application
-							</p>
+							<p className='mil-text-s mil-soft'>{trans('helper-copyright')}</p>
 						</div>
 						<div className='col-xl-6'>
 							<p className='mil-text-s mil-text-right mil-sm-text-left mil-soft'>
-								Developed by{' '}
+								{trans('ref')}{' '}
 								<a href='https://github.com/hoanganh-luong2906' target='blank'>
 									hoanganh-luong2906
 								</a>
