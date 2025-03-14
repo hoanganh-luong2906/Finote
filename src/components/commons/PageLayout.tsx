@@ -3,8 +3,8 @@ import { Fragment, useEffect } from 'react';
 import Footer from './Footer';
 import Header from './Header';
 import ScrollProgress from './ScrollProgress';
-import { finoteUtility } from '@/utilities';
-import EmbedPopup from './components/EmbedPopup';
+import { finoteUtility } from '@/shared/animations';
+import EmbedPopup from '../ui/EmbedPopup';
 
 const PageLayout = ({ children, bg, margin, noFooter, dark, footer }: any) => {
 	useEffect(() => {

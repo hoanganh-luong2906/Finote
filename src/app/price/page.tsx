@@ -1,8 +1,8 @@
 'use client';
 
-import { CallToAction2 } from '@/commons/components/CallToAction';
-import Pricing from '@/commons/components/Pricing';
-import PageLayout from '@/commons/PageLayout';
+import { CallToAction2 } from '@/components/ui/CallToAction';
+import Pricing from '@/components/ui/Pricing';
+import PageLayout from '@/components/commons/PageLayout';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 const page = () => {

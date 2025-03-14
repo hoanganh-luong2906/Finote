@@ -1,7 +1,7 @@
-import Banner from '@/commons/components/Banner';
-import { CallToAction1 } from '@/commons/components/CallToAction';
-import Testimonials1 from '@/commons/components/Testimonials';
-import PageLayout from '@/commons/PageLayout';
+import Banner from '@/components/ui/Banner';
+import { CallToAction1 } from '@/components/ui/CallToAction';
+import Testimonials1 from '@/components/ui/Testimonials';
+import PageLayout from '@/components/commons/PageLayout';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 const page = () => {

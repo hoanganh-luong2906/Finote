@@ -1,5 +1,5 @@
-import { CallToAction2 } from '@/commons/components/CallToAction';
-import PageLayout from '@/commons/PageLayout';
+import { CallToAction2 } from '@/components/ui/CallToAction';
+import PageLayout from '@/components/commons/PageLayout';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 const page = () => {

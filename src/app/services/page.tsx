@@ -1,6 +1,6 @@
-import { PageBanner } from '@/commons/components/Banner';
-import { CallToAction2 } from '@/commons/components/CallToAction';
-import PageLayout from '@/commons/PageLayout';
+import { PageBanner } from '@/components/ui/Banner';
+import { CallToAction2 } from '@/components/ui/CallToAction';
+import PageLayout from '@/components/commons/PageLayout';
 import { useTranslations } from 'next-intl';
 
 import Link from 'next/link';

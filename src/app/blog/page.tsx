@@ -1,5 +1,5 @@
-import { PageBanner } from '@/commons/components/Banner';
-import PageLayout from '@/commons/PageLayout';
+import { PageBanner } from '@/components/ui/Banner';
+import PageLayout from '@/components/commons/PageLayout';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 

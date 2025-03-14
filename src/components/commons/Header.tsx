@@ -1,7 +1,7 @@
 'use client';
 import { IUpdateLocaleRequest } from '@/app/api/_utils/constants';
 import useNotify from '@/hooks/useNotify';
-import { IDropdownOption } from '@/utilities/constants';
+import { IDropdownOption } from '@/shared/constants/global';
 import { useLocale, useTranslations } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';

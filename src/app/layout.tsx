@@ -13,7 +13,7 @@ import '@css/plugins/magnific-popup.css';
 
 import 'react-toastify/dist/ReactToastify.css';
 
-import Preloader from '@/commons/Preloader';
+import Preloader from '@/components/commons/Preloader';
 import '@css/style.css';
 import { NextIntlClientProvider } from 'next-intl';
 import { getLocale, getMessages } from 'next-intl/server';

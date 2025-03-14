@@ -1,5 +1,5 @@
 'use client';
-import { sliderProps } from '@/utilities/sliderProps';
+import { sliderProps } from '@/shared/animations/sliderProps';
 import { Fragment } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 const Testimonials1 = () => {

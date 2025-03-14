@@ -1,4 +1,4 @@
-import PageLayout from '@/commons/PageLayout';
+import PageLayout from '@/components/commons/PageLayout';
 import { useFormatter, useTranslations } from 'next-intl';
 import Link from 'next/link';
 const page = () => {
