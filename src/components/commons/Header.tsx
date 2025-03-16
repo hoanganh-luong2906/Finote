@@ -1,60 +1,38 @@
 'use client';
-import { IUpdateLocaleRequest } from '@/app/api/_utils/constants';
 import useNotify from '@/hooks/useNotify';
-import { IDropdownOption } from '@/shared/constants/global';
+import { DropdownOption } from '@/store/types/global';
+import { UpdateLocaleRequest } from '@/store/types/locale';
 import { useLocale, useTranslations } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import { useEffect, useRef, useState } from 'react';
 
-const languageOptions: IDropdownOption<'en' | 'vi'>[] = [
+const languageOptions: DropdownOption<'en' | 'vi'>[] = [
 	{ value: 'en', key: 'English' },
 	{ value: 'vi', key: 'Tiếng Việt' },
 ];
 
 const Header = ({ dark }: any) => {
-	const currentPath = usePathname();
-	const activeMenuFuntion = (value: any) =>
-		value.some((el: any) => currentPath.includes(el)) ? 'mil-active' : '';
-	const [toggle, setToggle] = useState(false);
+	const currentPath = usePathname() ?? '';
+	const router = useRouter();
+	const locale = useLocale();
 	const trans = useTranslations('Navigation');
 	const actionTrans = useTranslations('System');
-	const locale = useLocale();
-	const router = useRouter();
 
+	const activeMenuFuntion = (value: any) =>
+		value.some((el: any) => currentPath.includes(el)) ? 'mil-active' : '';
+
+	const [toggle, setToggle] = useState(false);
 	const [isOpen, setIsOpen] = useState(false);
 	const [selectedOption, setSelectedOption] = useState<string>('');
+
 	const dropdownRef = useRef<HTMLDivElement>(null);
 
-	useEffect(() => {
-		setSelectedOption(locale);
-	}, [locale]);
-
-	const toggleDropdown = () => {
-		setIsOpen(true);
-	};
-
-	const handleClickOutside = (event: MouseEvent) => {
-		if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
-			setIsOpen(false);
-		}
-	};
-
-	useEffect(() => {
-		if (isOpen) {
-			document.addEventListener('click', handleClickOutside);
-		} else {
-			document.removeEventListener('click', handleClickOutside);
-		}
-		return () => {
-			document.removeEventListener('click', handleClickOutside);
-		};
-	}, [isOpen]);
-
-	const handleOptionClick = async (option: IDropdownOption<'en' | 'vi'>) => {
+	const handleLanguageChange = async (option: DropdownOption<'en' | 'vi'>) => {
 		const endpoint = '/api/locale';
-		const formBody: IUpdateLocaleRequest = {
+
+		const formBody: UpdateLocaleRequest = {
 			locale: option.value,
 		};
 
@@ -76,6 +54,31 @@ const Header = ({ dark }: any) => {
 			});
 		}
 	};
+
+	useEffect(() => {
+		setSelectedOption(locale);
+	}, [locale]);
+
+	const handlelanguageClick = () => {
+		setIsOpen(true);
+	};
+
+	const handleClickOutside = (event: MouseEvent) => {
+		if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+			setIsOpen(false);
+		}
+	};
+
+	useEffect(() => {
+		if (isOpen) {
+			document.addEventListener('click', handleClickOutside);
+		} else {
+			document.removeEventListener('click', handleClickOutside);
+		}
+		return () => {
+			document.removeEventListener('click', handleClickOutside);
+		};
+	}, [isOpen]);
 
 	return (
 		<div className={`mil-top-panel ${dark ? 'mil-dark-2' : ''}`}>
@@ -137,8 +140,8 @@ const Header = ({ dark }: any) => {
 						<button
 							id='toggler'
 							className='relative border-none p-2 rounded-full transition duration-500 ease-in-out hover:bg-gray-300'
-							onClick={toggleDropdown}
-							onMouseEnter={toggleDropdown}
+							onClick={handlelanguageClick}
+							onMouseEnter={handlelanguageClick}
 						>
 							<Image
 								className='!opacity-50'
@@ -149,16 +152,17 @@ const Header = ({ dark }: any) => {
 							/>
 						</button>
 						<ul
+							onMouseLeave={() => setIsOpen(false)}
 							className={`${
 								isOpen
 									? 'opacity-1 translate-y-0 pointer-events-auto'
 									: 'opacity-0 translate-y-[10px]'
 							} absolute right-0 z-10 bg-white min-w-[160px] px-[15px] py-[15px] mt-[5px] flex flex-col gap-[5px] pointer-events-none rounded-[10px] transition-all duration-300 [transition-timing-function:cubic-bezier(0,0,0.3642,1)] shadow-[0_5px_5px_rgba(0,0,0,0.1)]`}
 						>
-							{languageOptions.map((option: IDropdownOption<'en' | 'vi'>) => (
+							{languageOptions.map((option: DropdownOption<'en' | 'vi'>) => (
 								<li
 									key={option.value}
-									onClick={() => handleOptionClick(option)}
+									onClick={() => handleLanguageChange(option)}
 									className={`font-semibold ${
 										selectedOption === option.value ? 'text-[#f27457]' : 'text-[#898D96]'
 									} text-[15px] pl-[15px] py-2 cursor-pointer transition-all duration-200 [transition-timing-function:cubic-bezier(0,0,0.3642,1)] hover:text-[#f27457] hover:bg-[#F2FAFA]`}
@@ -169,7 +173,7 @@ const Header = ({ dark }: any) => {
 						</ul>
 					</div>
 					<div className='mil-menu-buttons'>
-						<Link href='register' className='mil-btn mil-sm'>
+						<Link href='login' className='mil-btn mil-sm'>
 							{trans('login')}
 						</Link>
 						<div

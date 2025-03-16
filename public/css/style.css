@@ -56,6 +56,7 @@ body {
 @tailwind utilities;
 
 @layer utilities {
+
 	/* Hide scrollbar for Chrome, Safari and Opera */
 	.no-scrollbar::-webkit-scrollbar {
 		display: none;
@@ -151,6 +152,7 @@ h1.mil-display,
 }
 
 @media screen and (max-width: 992px) {
+
 	h1,
 	.h1 {
 		font-size: 56px;
@@ -168,6 +170,7 @@ h2,
 }
 
 @media screen and (max-width: 992px) {
+
 	h2,
 	.h2 {
 		font-size: 36px;
@@ -181,6 +184,7 @@ h4,
 }
 
 @media screen and (max-width: 992px) {
+
 	h4,
 	.h4 {
 		font-size: 28px;
@@ -671,12 +675,7 @@ frames
 }
 
 .mil-out-frame.mil-image {
-	background-image: url(/img/home-3/bg.png);
-	background-size: cover;
-}
-
-.mil-out-frame.mil-image-2 {
-	background-image: url(/img/home-4/bg.png);
+	background-image: url(/img/home-3/bg.webp);
 	background-size: cover;
 }
 
@@ -1110,26 +1109,26 @@ top menu
 	color: rgb(242, 116, 87);
 }
 
-.mil-top-menu ul li.mil-has-children > a {
+.mil-top-menu ul li.mil-has-children>a {
 	padding-right: 24px;
 }
 
-.mil-top-menu ul li.mil-has-children > a:before {
+.mil-top-menu ul li.mil-has-children>a:before {
 	right: 24px;
 }
 
-.mil-top-menu ul li.mil-has-children > a:after {
+.mil-top-menu ul li.mil-has-children>a:after {
 	content: url('data:image/svg+xml,<svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.5 1.25C0.5 1.25 2.63316 3.38316 4 4.75C4 4.75 6.13316 2.61683 7.5 1.25" stroke="%23898D96" stroke-linecap="round" stroke-linejoin="round"/></svg>');
 	position: absolute;
 	right: 8px;
 	margin-top: -1px;
 }
 
-.mil-top-menu ul li.mil-active > a {
+.mil-top-menu ul li.mil-active>a {
 	color: #f27457;
 }
 
-.mil-top-menu ul li.mil-active > a:before {
+.mil-top-menu ul li.mil-active>a:before {
 	opacity: 1;
 }
 
@@ -1202,7 +1201,7 @@ top menu
 	color: rgb(255, 255, 255);
 }
 
-.mil-dark-1 .mil-top-menu ul li:hover > a {
+.mil-dark-1 .mil-top-menu ul li:hover>a {
 	background-color: rgba(255, 255, 255, 0.1);
 	color: rgb(255, 255, 255);
 }
@@ -1247,11 +1246,11 @@ top menu
 	color: rgb(255, 255, 255);
 }
 
-.mil-dark-2 .mil-top-menu ul li.mil-has-children > a:after {
+.mil-dark-2 .mil-top-menu ul li.mil-has-children>a:after {
 	content: url("data:image/svg+xml,%3Csvg width='8' height='6' viewBox='0 0 8 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.5 1.25C0.5 1.25 2.63316 3.38316 4 4.75C4 4.75 6.13316 2.61683 7.5 1.25' stroke='%23F8F8F8' stroke-opacity='0.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
 }
 
-.mil-dark-2 .mil-top-menu ul li:hover > a {
+.mil-dark-2 .mil-top-menu ul li:hover>a {
 	background-color: rgba(255, 255, 255, 0.1);
 	color: rgb(255, 255, 255);
 	opacity: 1;
@@ -1339,7 +1338,7 @@ top menu
 		margin-bottom: 0;
 	}
 
-	.mil-top-menu ul li.mil-active > a {
+	.mil-top-menu ul li.mil-active>a {
 		box-shadow: none;
 		color: rgb(242, 116, 87);
 	}
@@ -2809,12 +2808,12 @@ textarea::placeholder {
 	visibility: hidden;
 }
 
-.mil-checkbox input[type='checkbox']:checked + label {
+.mil-checkbox input[type='checkbox']:checked+label {
 	background-color: rgb(242, 116, 87);
 	border-color: rgb(242, 116, 87);
 }
 
-.mil-checkbox input[type='checkbox']:checked + label:after {
+.mil-checkbox input[type='checkbox']:checked+label:after {
 	opacity: 1;
 }
 

@@ -227,5 +227,24 @@
 		"write-comment": "Viết bình luận của bạn ở đây",
 		"agree-to-data": "Tôi đồng ý rằng dữ liệu đã gửi, thu thập và lưu trữ *",
 		"post-comment": "Đăng bình luận"
+	},
+	"Register": {
+		"title": "Đăng ký với Finote",
+		"input-name": "Họ và tên",
+		"input-email": "Email của bạn",
+		"input-pwd": "Mật khẩu",
+		"input-pwd-cfm": "Xác nhận mật khẩu",
+		"btn-create": "Tạo tài khoản",
+		"title-alt": "- - - Hoặc - - -",
+		"btn-google": "Đăng ký bằng Google",
+		"register-term": "Bằng việc đăng ký, bạn đồng ý với <a>Điều khoản và Điều kiện</a>. Thông tin của bạn được bảo mật và sẽ không bao giờ được chia sẻ với bên thứ ba"
+	},
+	"Login": {
+		"title": "Đăng nhập với Finote",
+		"input-email": "Email của bạn",
+		"input-pwd": "Mật khẩu",
+		"btn-login": "Đăng nhập",
+		"title-alt": "- - - Hoặc - - -",
+		"btn-google": "Đăng nhập bằng Google"
 	}
 }

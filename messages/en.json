@@ -227,5 +227,24 @@
 		"write-comment": "Write your comment here",
 		"agree-to-data": "I agree that the data submitted, collected and stored *",
 		"post-comment": "Post Comment"
+	},
+	"Register": {
+		"title": "Register with Finote",
+		"input-name": "Full name",
+		"input-email": "Your e-mail",
+		"input-pwd": "Password",
+		"input-pwd-cfm": "Confirm Password",
+		"btn-create": "Create Account",
+		"title-alt": "- - - Or - - -",
+		"btn-google": "Sign up with Google",
+		"register-term": "By registering, you agree to our <a>Terms and Conditions</a>. Your information is protected and will never be shared with third parties"
+	},
+	"Login": {
+		"title": "Login with Finote",
+		"input-email": "Your e-mail",
+		"input-pwd": "Password",
+		"btn-login": "Login",
+		"title-alt": "- - - Or - - -",
+		"btn-google": "Sign in with Google"
 	}
 }

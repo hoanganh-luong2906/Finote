@@ -1,8 +1,8 @@
-import { IUpdateLocaleRequest } from '../_utils/constants';
+import { UpdateLocaleRequest } from '@/store/types/locale';
 
 export async function PUT(request: Request) {
 	const req = await request.json();
-	const body: IUpdateLocaleRequest = { ...req };
+	const body: UpdateLocaleRequest = { ...req };
 
 	if (body.locale?.length > 0) {
 		return new Response('Successfully updated language', {
